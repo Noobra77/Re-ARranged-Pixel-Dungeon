@@ -1,0 +1,227 @@
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/ModMenu.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/ModMenu.java
+new file mode 100644
+index 00000000..f33a5361
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/ModMenu.java
+@@ -0,0 +1,57 @@
++/*
++ * Mod Menu additions for Re-ARranged Pixel Dungeon (GPLv3, same as the base game).
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon;
++
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Hunger;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Invulnerability;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.effects.SpellSprite;
++import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHealing;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.noosa.audio.Sample;
++import com.watabou.utils.GameSettings;
++
++/** Simple persistent cheat toggles, opened from the pause menu. */
++public class ModMenu {
++
++	private static final String KEY_RESPAWN   = "mod_respawn";
++	private static final String KEY_NO_HUNGER = "mod_no_hunger";
++	private static final String KEY_GOD       = "mod_god";
++
++	public static boolean respawn()  { return GameSettings.getBoolean(KEY_RESPAWN, false); }
++	public static boolean noHunger() { return GameSettings.getBoolean(KEY_NO_HUNGER, false); }
++	public static boolean godMode()  { return GameSettings.getBoolean(KEY_GOD, false); }
++
++	public static void respawn(boolean v)  { GameSettings.put(KEY_RESPAWN, v); }
++	public static void noHunger(boolean v) { GameSettings.put(KEY_NO_HUNGER, v); }
++	public static void godMode(boolean v)  { GameSettings.put(KEY_GOD, v); }
++
++	/** Revive on the spot with all items kept: full HP, hunger cleared, brief invulnerability. */
++	public static void reviveHero( Hero hero ) {
++		hero.interrupt();
++		hero.HP = hero.HT;
++		PotionOfHealing.cure(hero);
++		fillHunger(hero);
++		Buff.prolong(hero, Invulnerability.class, Invulnerability.DURATION + 2f);
++
++		SpellSprite.show(hero, SpellSprite.ANKH);
++		GameScene.flash(0x80FFFF40);
++		Sample.INSTANCE.play(Assets.Sounds.TELEPORT);
++		GLog.p("Mod Menu: you were revived!");
++	}
++
++	public static void fullHeal( Hero hero ) {
++		hero.HP = hero.HT;
++		PotionOfHealing.cure(hero);
++		GLog.p("Mod Menu: healed to full.");
++	}
++
++	public static void fillHunger( Hero hero ) {
++		Hunger h = hero.buff(Hunger.class);
++		if (h != null) h.satisfy(Hunger.STARVING);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java
+index 80ce6656..d12887f7 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java
+@@ -23,6 +23,7 @@ package com.shatteredpixel.shatteredpixeldungeon.actors.buffs;
+ 
+ import com.shatteredpixel.shatteredpixeldungeon.Badges;
+ import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.ModMenu;
+ import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
+@@ -64,6 +65,12 @@ public class Hunger extends Buff implements Hero.Doom {
+ 	@Override
+ 	public boolean act() {
+ 
++		if (ModMenu.noHunger()) {
++			level = 0;
++			spend(TICK);
++			return true;
++		}
++
+ 		if (Dungeon.level.locked
+ 				|| target.buff(WellFed.class) != null
+ 				|| SPDSettings.intro()
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java
+index d71ff9a0..8e2bf8a9 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java
+@@ -30,6 +30,7 @@ import com.shatteredpixel.shatteredpixeldungeon.Badges;
+ import com.shatteredpixel.shatteredpixeldungeon.Bones;
+ import com.shatteredpixel.shatteredpixeldungeon.Challenges;
+ import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.ModMenu;
+ import com.shatteredpixel.shatteredpixeldungeon.GamesInProgress;
+ import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+ import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
+@@ -2360,6 +2361,9 @@ public class Hero extends Char {
+ 
+ 	@Override
+ 	public void damage( int dmg, Object src ) {
++		if (ModMenu.godMode()) {
++			return;
++		}
+ 		if (buff(TimekeepersHourglass.timeStasis.class) != null
+ 				|| buff(TimeStasis.class) != null) {
+ 			return;
+@@ -3036,6 +3040,11 @@ public class Hero extends Char {
+ 	@Override
+ 	public void die( Object cause ) {
+ 
++		if (ModMenu.respawn()) {
++			ModMenu.reviveHero(this);
++			return;
++		}
++
+ 		if (buff(Enduring.class) != null) {
+ 			this.HP = 1;
+ 			return;
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
+index 012909f0..12f4b348 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
+@@ -61,6 +61,16 @@ public class WndGame extends Window {
+ 		});
+ 		curBtn.icon(Icons.get(Icons.PREFS));
+ 
++		// Mod menu
++		addButton( curBtn = new RedButton( "Mod Menu" ) {
++			@Override
++			protected void onClick() {
++				hide();
++				GameScene.show(new WndModMenu());
++			}
++		});
++		curBtn.icon(Icons.get(Icons.CHALLENGE_COLOR));
++
+ 		// Challenges window
+ 		if (Dungeon.challenges > 0) {
+ 			addButton( curBtn = new RedButton( Messages.get(this, "challenges") ) {
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModMenu.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModMenu.java
+new file mode 100644
+index 00000000..3c35cadd
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModMenu.java
+@@ -0,0 +1,78 @@
++/*
++ * Mod Menu additions for Re-ARranged Pixel Dungeon (GPLv3, same as the base game).
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.ModMenu;
++import com.shatteredpixel.shatteredpixeldungeon.ui.CheckBox;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++
++public class WndModMenu extends Window {
++
++	private static final int WIDTH      = 120;
++	private static final int BTN_HEIGHT = 20;
++	private static final int GAP        = 2;
++
++	private int pos;
++
++	public WndModMenu() {
++		super();
++
++		CheckBox chkRespawn = new CheckBox("Auto-respawn on death") {
++			@Override
++			protected void onClick() {
++				super.onClick();
++				ModMenu.respawn(checked());
++			}
++		};
++		chkRespawn.checked(ModMenu.respawn());
++		addButton(chkRespawn);
++
++		CheckBox chkHunger = new CheckBox("Freeze hunger") {
++			@Override
++			protected void onClick() {
++				super.onClick();
++				ModMenu.noHunger(checked());
++			}
++		};
++		chkHunger.checked(ModMenu.noHunger());
++		addButton(chkHunger);
++
++		CheckBox chkGod = new CheckBox("God mode (no damage)") {
++			@Override
++			protected void onClick() {
++				super.onClick();
++				ModMenu.godMode(checked());
++			}
++		};
++		chkGod.checked(ModMenu.godMode());
++		addButton(chkGod);
++
++		addButton(new RedButton("Heal to full") {
++			@Override
++			protected void onClick() {
++				if (Dungeon.hero != null && Dungeon.hero.isAlive()) ModMenu.fullHeal(Dungeon.hero);
++				hide();
++			}
++		});
++
++		addButton(new RedButton("Fill hunger") {
++			@Override
++			protected void onClick() {
++				if (Dungeon.hero != null && Dungeon.hero.isAlive()) ModMenu.fillHunger(Dungeon.hero);
++				hide();
++			}
++		});
++
++		resize(WIDTH, pos);
++	}
++
++	private void addButton( RedButton btn ) {
++		add(btn);
++		btn.setRect(0, pos > 0 ? pos += GAP : 0, WIDTH, BTN_HEIGHT);
++		pos += BTN_HEIGHT;
++	}
++}
