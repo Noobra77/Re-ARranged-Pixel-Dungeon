@@ -1,26 +1,49 @@
-name: Build modded APK
+name: Build modded Android APK
+
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apk-build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
+  build-apk:
+    name: Build debug APK
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Check out your game version and apply the mod menu
-        run: |
-          cp modmenu.patch /tmp/modmenu.patch
-          git checkout -f v3.2.0_based_v3.39.0
-          git apply /tmp/modmenu.patch
-      - uses: actions/setup-java@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
-      - uses: gradle/actions/setup-gradle@v4
-      - run: chmod +x gradlew && ./gradlew android:assembleDebug --no-daemon
-      - uses: actions/upload-artifact@v4
+          java-version: "17"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Apply mod menu patch
+        run: |
+          git apply --check modmenu.patch
+          git apply modmenu.patch
+
+      - name: Build debug APK
+        run: ./gradlew :android:assembleDebug --no-daemon
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
         with:
-          name: modded-apk
+          name: modded-apk-${{ github.run_number }}
           path: android/build/outputs/apk/debug/*.apk
-          
+          if-no-files-found: error
+          retention-days: 14
