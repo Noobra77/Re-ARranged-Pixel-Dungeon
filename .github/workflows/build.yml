@@ -1,0 +1,26 @@
+name: Build modded APK
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check out your game version and apply the mod menu
+        run: |
+          cp modmenu.patch /tmp/modmenu.patch
+          git checkout -f v3.2.0_based_v3.39.0
+          git apply /tmp/modmenu.patch
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      - run: chmod +x gradlew && ./gradlew android:assembleDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: modded-apk
+          path: android/build/outputs/apk/debug/*.apk
+          
