@@ -1,0 +1,2742 @@
+diff --git a/core/src/main/assets/messages/actors/actors.properties b/core/src/main/assets/messages/actors/actors.properties
+index 0f7e5d90..b0ebeead 100644
+--- a/core/src/main/assets/messages/actors/actors.properties
++++ b/core/src/main/assets/messages/actors/actors.properties
+@@ -1834,3 +1834,41 @@ actors.char.defeat=you defeated %s.
+ actors.char.def_verb=dodged
+ actors.char.invulnerable=invulnerable
+ actors.char.immune=immune
++actors.hero.talent.grave_appetite.title=grave appetite
++actors.hero.talent.grave_appetite.desc=_+1:_ Eating food heals the Necromancer for _15%_ of his max HP.\n\n_+2:_ Eating food heals the Necromancer for _30%_ of his max HP.
++actors.hero.talent.soul_tithe.title=soul tithe
++actors.hero.talent.soul_tithe.desc=_+1:_ Claiming a soul heals the Necromancer for _3%_ of his max HP.\n\n_+2:_ Claiming a soul heals the Necromancer for _6%_ of his max HP.
++actors.hero.talent.fresh_graves.title=fresh graves
++actors.hero.talent.fresh_graves.desc=_+1:_ Newly raised undead have _25% more_ max HP.\n\n_+2:_ Newly raised undead have _50% more_ max HP.
++actors.hero.talent.bone_plating.title=bone plating
++actors.hero.talent.bone_plating.desc=_+1:_ Bone Armor is _30% stronger_.\n\n_+2:_ Bone Armor is _60% stronger_.
++actors.hero.talent.restless_dead.title=restless dead
++actors.hero.talent.restless_dead.desc=_+1:_ Your undead regenerate _1%_ of their max HP every turn.\n\n_+2:_ Your undead regenerate _2%_ of their max HP every turn.
++actors.hero.talent.grave_frost.title=grave frost
++actors.hero.talent.grave_frost.desc=_+1:_ Death Nova slows enemies for _4 extra turns_.\n\n_+2:_ Death Nova slows enemies for _8 extra turns_.
++actors.hero.talent.vampiric_touch.title=vampiric touch
++actors.hero.talent.vampiric_touch.desc=_+1:_ Soul Drain heals _25% more_.\n\n_+2:_ Soul Drain heals _50% more_.
++actors.hero.talent.spectral_speed.title=spectral speed
++actors.hero.talent.spectral_speed.desc=_+1:_ Newly raised undead are hasted for _20 turns_.\n\n_+2:_ Newly raised undead are hasted for _40 turns_.
++actors.hero.talent.dark_mend.title=dark mend
++actors.hero.talent.dark_mend.desc=_+1:_ While an undead servant is within 3 tiles, you heal _1 HP every 6 turns_ for each of them.\n\n_+2:_ While an undead servant is within 3 tiles, you heal _1 HP every 3 turns_ for each of them.
++actors.hero.talent.death_bond.title=death bond
++actors.hero.talent.death_bond.desc=_+1:_ When one of your undead dies, you heal _6%_ of your max HP.\n\n_+2:_ When one of your undead dies, you heal _12%_ of your max HP.
++actors.hero.talent.double_soul.title=double soul
++actors.hero.talent.double_soul.desc=_+1:_ _25%_ of the time, a claimed soul is stored twice.\n\n_+2:_ _50%_ of the time, a claimed soul is stored twice.
++actors.hero.talent.soul_vault.title=soul vault
++actors.hero.talent.soul_vault.desc=_+1:_ Claiming a soul grants a _3 point_ barrier.\n\n_+2:_ Claiming a soul grants a _6 point_ barrier.\n\n_+3:_ Claiming a soul grants a _9 point_ barrier.
++actors.hero.talent.overlord.title=overlord
++actors.hero.talent.overlord.desc=_+1:_ Newly raised undead gain a barrier of _(2 + your level)_ points.\n\n_+2:_ Newly raised undead gain a barrier of _2x (2 + your level)_ points.\n\n_+3:_ Newly raised undead gain a barrier of _3x (2 + your level)_ points.
++actors.hero.talent.legion_vigor.title=legion vigor
++actors.hero.talent.legion_vigor.desc=Undead raised by Army of the Dead have _+25% max HP_ per point.
++actors.hero.talent.risen_rage.title=risen rage
++actors.hero.talent.risen_rage.desc=Undead raised by Army of the Dead are hasted for _+15 turns_ per point.
++actors.hero.talent.thick_marrow.title=thick marrow
++actors.hero.talent.thick_marrow.desc=Bone Fortress barriers are _+25% stronger_ per point.
++actors.hero.talent.shared_armor.title=shared armor
++actors.hero.talent.shared_armor.desc=Your undead receive _+12.5%_ more of the Bone Fortress barrier per point.
++actors.hero.talent.pulse_reach.title=pulse reach
++actors.hero.talent.pulse_reach.desc=Death Pulse reaches _+1 tile_ further per point.
++actors.hero.talent.corpse_feast.title=corpse feast
++actors.hero.talent.corpse_feast.desc=Each enemy hit by Death Pulse heals you for _2%_ of your max HP per point.
+diff --git a/core/src/main/assets/splashes/necromancer.jpg b/core/src/main/assets/splashes/necromancer.jpg
+new file mode 100644
+index 0000000000000000000000000000000000000000..f4eca510217168494fec9b228dbd5b31fe50e41d
+GIT binary patch
+literal 27070
+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
+A{{R30
+
+literal 0
+HcmV?d00001
+
+diff --git a/core/src/main/assets/sprites/necromancer.png b/core/src/main/assets/sprites/necromancer.png
+index f17b14abf23292d49527fabf2112aba29b0ebce5..080c8f0663104389c7c5c42711b74cb3aef42219 100644
+GIT binary patch
+literal 2963
+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
+
+delta 701
+zcmV;u0z&<h7sv&W7k@wm0{{R32XnNI0000aP)t-s0000rH8mh0AZTc4QBhF<004J)
+zcmMzY7Z(>tM@Ikv00000Bqk>H0000CbW%=J0RR90|NsC0|Nnr0Oxw0U0006<Nkl<Z
+zcmc$d0f!qw7>1{z?rcDFK>@M4|DZphR?q^cj6?vX0Gtv~V1FqoKtT%x0&}oXrTgbP
+zZ@ztv^D^CxBOg4n^M3O^JF{`IUM*Jc%sMht$Z4J|uNQCY`pnjU)Ip@>BrkmhbvJIX
+zY(9VD03mad2lro6uAsQl!gGL<Imt_3LDkrR<N&4Qw6E|gbi;BMT}6jRFtf4bGJSWK
+zew2&Dp(Zl}B!8!Uyb7K~Gwmdn>z^%|8?gLvXtD3F#(#eo*~Ec~BEplHBJjRV6rse{
+zcM$mD{dR>Dk5wni3v~KXP8Dc6d7cDbV&J{=V{Ht3_KC><Kgu`jwtY(5NS>R(4D(jz
+z5lu+;sR*v3K!8+%#;#z2x!XkMXX_U06yZrs72pP!3xBYWtk<>Qb`&WPP?1Rji2E4C
+z&vS5AN0ICi#1q0gd3)&4N8&jIB5M!celvmBHkf1{aR}fif^k<ccLr4m$Hd9G9-KS(
+z0N(I<Nrh+#p1j|2fRZ_KZtQQ24}6Y5aKfy>#_z$?ezW5MC3ECp9KIU=r1k2zzaMEY
+zFn|+JfPVv&%=N}OPk>b6%2Nc)37kCNJa7XgbG;D)U{7+rL?Ezn7dS}C++ZAr9-I#(
+z)}_y`;1SFT#3DIJ$@K~d;rQ41NIvN|>c1;5kY^anjp&VYQu>}-;An#?cQoYkBH*4u
+zVDexxy*W@IP|QjM+;s#T1sre{fr=w85~#pqxi&z0^9m>xC>OzCPQH@BzxLo*00000
+jV35D{81`2z0000$m^81ifTN>u00000NkvXXu0mjf?V~$=
+
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Assets.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Assets.java
+index 61ff90de..faf85bb5 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Assets.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Assets.java
+@@ -348,6 +348,7 @@ public class Assets {
+ 		public static final String KNIGHT	= "splashes/knight.jpg";
+ 		public static final String MEDIC	= "splashes/medic.jpg";
+ 		public static final String ARCHER	= "splashes/archer.jpg";
++		public static final String NECROMANCER = "splashes/necromancer.jpg";
+ 
+ 		public static final String SEWERS   = "splashes/sewers.jpg";
+ 		public static final String PRISON   = "splashes/prison.jpg";
+@@ -372,6 +373,7 @@ public class Assets {
+ 		public static final String KNIGHT	= "sprites/knight.png";
+ 		public static final String MEDIC	= "sprites/medic.png";
+ 		public static final String ARCHER	= "sprites/archer.png";
++		public static final String NECROMANCER = "sprites/necromancer.png";
+ 		public static final String AVATARS  = "sprites/avatars.png";
+ 		public static final String PET      = "sprites/pet.png";
+ 		public static final String AMULET   = "sprites/amulet.png";
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/ModMenu.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/ModMenu.java
+new file mode 100644
+index 00000000..3a074d79
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/ModMenu.java
+@@ -0,0 +1,131 @@
++/*
++ * Mod Menu additions for Re-ARranged Pixel Dungeon (GPLv3, same as the base game).
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon;
++
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Hunger;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Invulnerability;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.effects.SpellSprite;
++import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHealing;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.noosa.audio.Sample;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.ModEffects;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.NecromancerGrimoire;
++import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.InterlevelScene;
++import com.watabou.noosa.Game;
++import com.watabou.utils.GameSettings;
++
++/** Simple persistent cheat toggles, opened from the pause menu. */
++public class ModMenu {
++
++	private static final String KEY_RESPAWN   = "mod_respawn";
++	private static final String KEY_NO_HUNGER = "mod_no_hunger";
++	private static final String KEY_GOD       = "mod_god";
++	private static final String KEY_DMG       = "mod_dmg";
++
++	private static final int[] DMG_STEPS = {1, 2, 5, 10, 25};
++
++	public static boolean respawn()  { return GameSettings.getBoolean(KEY_RESPAWN, false); }
++	public static boolean noHunger() { return GameSettings.getBoolean(KEY_NO_HUNGER, false); }
++	public static boolean godMode()  { return GameSettings.getBoolean(KEY_GOD, false); }
++
++	public static void respawn(boolean v)  { GameSettings.put(KEY_RESPAWN, v); }
++	public static void noHunger(boolean v) { GameSettings.put(KEY_NO_HUNGER, v); }
++	public static void godMode(boolean v)  { GameSettings.put(KEY_GOD, v); }
++
++	public static int damageMult() {
++		int i = GameSettings.getInt(KEY_DMG, 0);
++		return DMG_STEPS[Math.max(0, Math.min(DMG_STEPS.length - 1, i))];
++	}
++
++	/** Cycles the damage multiplier through 1x, 2x, 5x, 10x, 25x. Returns the new value. */
++	public static int cycleDamageMult() {
++		int i = (GameSettings.getInt(KEY_DMG, 0) + 1) % DMG_STEPS.length;
++		GameSettings.put(KEY_DMG, i);
++		return DMG_STEPS[i];
++	}
++
++	public static void addGold( int amount ) {
++		Dungeon.gold += amount;
++		GLog.p("Mod Menu: +" + amount + " gold.");
++	}
++
++	public static void addMaxHP( Hero hero, int amount ) {
++		hero.HTBoost += amount;
++		hero.updateHT(true);
++		GLog.p("Mod Menu: max HP is now " + hero.HT + ".");
++	}
++
++	/** Lets any hero use the necromancer abilities (and start collecting souls). */
++	public static void giveGrimoire( Hero hero ) {
++		if (NecromancerGrimoire.find(hero) != null) {
++			GLog.w("Mod Menu: you already carry a grimoire.");
++			return;
++		}
++		NecromancerGrimoire book = new NecromancerGrimoire();
++		if (book.collect(hero.belongings.backpack)) {
++			GLog.p("Mod Menu: you received the Necromancer's Grimoire.");
++			Item.updateQuickslot();
++		} else {
++			Dungeon.level.drop(book, hero.pos).sprite.drop();
++		}
++	}
++
++	public static void revealMap() {
++		ModEffects.apply(ModEffects.MAP, 1, Dungeon.hero);
++	}
++
++	public static void identifyAll() {
++		ModEffects.apply(ModEffects.IDENTIFY, 1, Dungeon.hero);
++	}
++
++	/** Moves the hero to a neighbouring floor (clamped to 1..26). */
++	public static void changeFloor( int delta ) {
++		int target = Math.max(1, Math.min(26, Dungeon.depth + delta));
++		if (target == Dungeon.depth) {
++			GLog.w("Mod Menu: you can't go further that way.");
++			return;
++		}
++		if (!Dungeon.interfloorTeleportAllowed()) {
++			GLog.w("Mod Menu: you can't leave this floor right now.");
++			return;
++		}
++		Level.beforeTransition();
++		InterlevelScene.mode = InterlevelScene.Mode.RETURN;
++		InterlevelScene.returnDepth = target;
++		InterlevelScene.returnBranch = Dungeon.branch;
++		InterlevelScene.returnPos = -1;
++		Game.switchScene(InterlevelScene.class);
++	}
++
++	/** Revive on the spot with all items kept: full HP, hunger cleared, brief invulnerability. */
++	public static void reviveHero( Hero hero ) {
++		hero.interrupt();
++		hero.HP = hero.HT;
++		PotionOfHealing.cure(hero);
++		fillHunger(hero);
++		Buff.prolong(hero, Invulnerability.class, Invulnerability.DURATION + 2f);
++
++		SpellSprite.show(hero, SpellSprite.ANKH);
++		GameScene.flash(0x80FFFF40);
++		Sample.INSTANCE.play(Assets.Sounds.TELEPORT);
++		GLog.p("Mod Menu: you were revived!");
++	}
++
++	public static void fullHeal( Hero hero ) {
++		hero.HP = hero.HT;
++		PotionOfHealing.cure(hero);
++		GLog.p("Mod Menu: healed to full.");
++	}
++
++	public static void fillHunger( Hero hero ) {
++		Hunger h = hero.buff(Hunger.class);
++		if (h != null) h.satisfy(Hunger.STARVING);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java
+index 80ce6656..d12887f7 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/buffs/Hunger.java
+@@ -23,6 +23,7 @@ package com.shatteredpixel.shatteredpixeldungeon.actors.buffs;
+ 
+ import com.shatteredpixel.shatteredpixeldungeon.Badges;
+ import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.ModMenu;
+ import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
+@@ -64,6 +65,12 @@ public class Hunger extends Buff implements Hero.Doom {
+ 	@Override
+ 	public boolean act() {
+ 
++		if (ModMenu.noHunger()) {
++			level = 0;
++			spend(TICK);
++			return true;
++		}
++
+ 		if (Dungeon.level.locked
+ 				|| target.buff(WellFed.class) != null
+ 				|| SPDSettings.intro()
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java
+index d71ff9a0..ada0aad6 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Hero.java
+@@ -30,6 +30,7 @@ import com.shatteredpixel.shatteredpixeldungeon.Badges;
+ import com.shatteredpixel.shatteredpixeldungeon.Bones;
+ import com.shatteredpixel.shatteredpixeldungeon.Challenges;
+ import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.ModMenu;
+ import com.shatteredpixel.shatteredpixeldungeon.GamesInProgress;
+ import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+ import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
+@@ -909,6 +910,10 @@ public class Hero extends Char {
+ 	
+ 	@Override
+ 	public int damageRoll() {
++		return damageRollBase() * ModMenu.damageMult();
++	}
++
++	private int damageRollBase() {
+ 		KindOfWeapon wep = belongings.attackingWeapon();
+ 		int dmg;
+ 
+@@ -2360,6 +2365,9 @@ public class Hero extends Char {
+ 
+ 	@Override
+ 	public void damage( int dmg, Object src ) {
++		if (ModMenu.godMode()) {
++			return;
++		}
+ 		if (buff(TimekeepersHourglass.timeStasis.class) != null
+ 				|| buff(TimeStasis.class) != null) {
+ 			return;
+@@ -3036,6 +3044,11 @@ public class Hero extends Char {
+ 	@Override
+ 	public void die( Object cause ) {
+ 
++		if (ModMenu.respawn()) {
++			ModMenu.reviveHero(this);
++			return;
++		}
++
+ 		if (buff(Enduring.class) != null) {
+ 			this.HP = 1;
+ 			return;
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/HeroClass.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/HeroClass.java
+index 8817bf16..b87b4b68 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/HeroClass.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/HeroClass.java
+@@ -25,6 +25,11 @@ import com.shatteredpixel.shatteredpixeldungeon.Assets;
+ import com.shatteredpixel.shatteredpixeldungeon.Badges;
+ import com.shatteredpixel.shatteredpixeldungeon.Challenges;
+ import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.NecromancerGrimoire;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.necromancer.ArmyOfTheDead;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.necromancer.BoneFortress;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.necromancer.DeathPulse;
++
+ import com.shatteredpixel.shatteredpixeldungeon.QuickSlot;
+ import com.shatteredpixel.shatteredpixeldungeon.SPDSettings;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.ArmorAbility;
+@@ -153,7 +158,8 @@ public enum HeroClass {
+ 	ADVENTURER( HeroSubClass.ENGINEER, HeroSubClass.EXPLORER, HeroSubClass.RESEARCHER ),
+ 	KNIGHT( HeroSubClass.DEATHKNIGHT, HeroSubClass.HORSEMAN, HeroSubClass.CRUSADER),
+ 	MEDIC( HeroSubClass.SAVIOR, HeroSubClass.THERAPIST, HeroSubClass.MEDICALOFFICER ),
+-	ARCHER( HeroSubClass.BOWMASTER, HeroSubClass.JUGGLER, HeroSubClass.SHARPSHOOTER );
++	ARCHER( HeroSubClass.BOWMASTER, HeroSubClass.JUGGLER, HeroSubClass.SHARPSHOOTER ),
++	NECROMANCER( HeroSubClass.WARLOCK, HeroSubClass.DEATHKNIGHT );
+ 
+ 	private HeroSubClass[] subClasses;
+ 
+@@ -254,6 +260,10 @@ public enum HeroClass {
+ 			case ARCHER:
+ 				initArcher( hero );
+ 				break;
++
++			case NECROMANCER:
++				initNecromancer( hero );
++				break;
+ 		}
+ 
+ 		if (SPDSettings.quickslotWaterskin()) {
+@@ -293,6 +303,8 @@ public enum HeroClass {
+ 				return Badges.Badge.MASTERY_MEDIC;
+ 			case ARCHER:
+ 				return Badges.Badge.MASTERY_ARCHER;
++			case NECROMANCER:
++				return Badges.Badge.MASTERY_MAGE;
+ 		}
+ 		return null;
+ 	}
+@@ -496,15 +508,31 @@ public enum HeroClass {
+ 		new PotionOfHaste().identify();
+ 	}
+ 
++	private static void initNecromancer( Hero hero ) {
++
++		( hero.belongings.weapon = new Dagger() ).identify();
++		hero.belongings.weapon.activate( hero );
++
++		NecromancerGrimoire book = new NecromancerGrimoire();
++		book.identify().collect();
++		Dungeon.quickslot.setSlot( 0, book );
++
++		new ScrollOfMagicMapping().identify();
++		new PotionOfHaste().identify();
++	}
++
+ 	public String title() {
++		if (this == NECROMANCER) return "Necromancer";
+ 		return Messages.get(HeroClass.class, name());
+ 	}
+ 
+ 	public String desc(){
++		if (this == NECROMANCER) return "The Necromancer carries a _grimoire_ with no cooldowns and no limits. He can _raise any living enemy_ as a permanent undead servant, _summon the souls_ of everything he has slain, wrap himself in _bone armor_, _drain the life_ of enemies in sight, and release a _death nova_ through his servants.\n\nHis undead never expire, and everywhere they walk the map is revealed to him.\n\nThe Necromancer starts with a dagger, his grimoire, cloth armor, a waterskin, and a velvet pouch.\n\nThe Necromancer automatically identifies:\n_-_ Scrolls of Magic Mapping\n_-_ Potions of Haste";
+ 		return Messages.get(HeroClass.class, name()+"_desc");
+ 	}
+ 
+ 	public String shortDesc(){
++		if (this == NECROMANCER) return "The Necromancer _raises any enemy_ as a permanent undead servant that protects him and reveals the map, with no cooldowns and no limits.";
+ 		return Messages.get(HeroClass.class, name()+"_desc_short");
+ 	}
+ 
+@@ -538,6 +566,8 @@ public enum HeroClass {
+ 				return new ArmorAbility[]{new HealingGenerator(), new AngelWing(), new GammaRayEmmit()};
+ 			case ARCHER:
+ 				return new ArmorAbility[]{new DashAbility(), new Hunt(), new Snipe()};
++			case NECROMANCER:
++				return new ArmorAbility[]{new ArmyOfTheDead(), new BoneFortress(), new DeathPulse()};
+ 		}
+ 	}
+ 
+@@ -567,6 +597,8 @@ public enum HeroClass {
+ 				return Assets.Sprites.MEDIC;
+ 			case ARCHER:
+ 				return Assets.Sprites.ARCHER;
++			case NECROMANCER:
++				return Assets.Sprites.NECROMANCER;
+ 		}
+ 	}
+ 
+@@ -596,6 +628,8 @@ public enum HeroClass {
+ 				return Assets.Splashes.MEDIC;
+ 			case ARCHER:
+ 				return Assets.Splashes.ARCHER;
++			case NECROMANCER:
++				return Assets.Splashes.NECROMANCER;
+ 		}
+ 	}
+ 	
+@@ -628,10 +662,13 @@ public enum HeroClass {
+ 				return Badges.isUnlocked(Badges.Badge.UNLOCK_MEDIC);
+ 			case ARCHER:
+ 				return Badges.isUnlocked(Badges.Badge.UNLOCK_ARCHER);
++			case NECROMANCER:
++				return true;
+ 		}
+ 	}
+ 	
+ 	public String unlockMsg() {
++		if (this == NECROMANCER) return shortDesc();
+ 		return shortDesc() + "\n\n" + Messages.get(HeroClass.class, name()+"_unlock");
+ 	}
+ 
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Talent.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Talent.java
+index 173a685f..6e279fdd 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Talent.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/Talent.java
+@@ -616,6 +616,31 @@ public enum Talent {
+ 
+ 
+ 
++	//Necromancer T1
++	GRAVE_APPETITE				(0, 1),
++	SOUL_TITHE					(1, 1),
++	FRESH_GRAVES				(2, 1),
++	BONE_PLATING				(3, 1),
++	RESTLESS_DEAD				(4, 1),
++	//Necromancer T2
++	GRAVE_FROST					(5, 1),
++	VAMPIRIC_TOUCH				(6, 1),
++	SPECTRAL_SPEED				(7, 1),
++	DARK_MEND					(8, 1),
++	DEATH_BOND					(9, 1),
++	DOUBLE_SOUL					(10, 1),
++	//Necromancer T3
++	SOUL_VAULT					(11, 1, 3),
++	OVERLORD					(12, 1, 3),
++	//Army of the Dead T4
++	LEGION_VIGOR				(31, 1, 4),
++	RISEN_RAGE					(32, 1, 4),
++	//Bone Fortress T4
++	THICK_MARROW				(33, 1, 4),
++	SHARED_ARMOR				(31, 1, 4),
++	//Death Pulse T4
++	PULSE_REACH					(32, 1, 4),
++	CORPSE_FEAST				(33, 1, 4),
+ 	//Knight T1
+ 	TOUGH_MEAL					(0, 9),
+ 	KNIGHTS_INTUITION			(1, 9),
+@@ -1430,7 +1455,7 @@ public enum Talent {
+ 				case WARRIOR: default:
+ 					y = 0;
+ 					break;
+-				case MAGE:
++				case MAGE: case NECROMANCER:
+ 					y = 1;
+ 					break;
+ 				case ROGUE:
+@@ -1717,6 +1742,12 @@ public enum Talent {
+ 	public static class HarvestBerriesDropped extends CounterBuff{{revivePersists = true;}};
+ 
+ 	public static void onFoodEaten( Hero hero, float foodVal, Item foodSource ){
++		if (hero.hasTalent(GRAVE_APPETITE)){
++			//15% / 30% of max HP healed
++			int healing = Math.round(hero.HT * 0.15f * hero.pointsInTalent(GRAVE_APPETITE));
++			hero.HP = Math.min(hero.HP + healing, hero.HT);
++			hero.sprite.showStatusWithIcon(CharSprite.POSITIVE, Integer.toString(healing), FloatingText.HEALING);
++		}
+ 		if (hero.hasTalent(HEARTY_MEAL)){
+ 			//4/6 HP healed, when hero is below 33% health (with a little rounding up)
+ 			if (hero.HP/(float)hero.HT < 0.334f) {
+@@ -2681,6 +2712,9 @@ public enum Talent {
+ 			case MAGE:
+ 				Collections.addAll(tierTalents, EMPOWERING_MEAL, SCHOLARS_INTUITION, LINGERING_MAGIC, BACKUP_BARRIER, CHARGE_PRESERVE);
+ 				break;
++			case NECROMANCER:
++				Collections.addAll(tierTalents, GRAVE_APPETITE, SOUL_TITHE, FRESH_GRAVES, BONE_PLATING, RESTLESS_DEAD);
++				break;
+ 			case ROGUE:
+ 				Collections.addAll(tierTalents, CACHED_RATIONS, THIEFS_INTUITION, SUCKER_PUNCH, PROTECTIVE_SHADOWS, EMERGENCY_ESCAPE);
+ 				break;
+@@ -2728,6 +2762,9 @@ public enum Talent {
+ 			case MAGE:
+ 				Collections.addAll(tierTalents, ENERGIZING_MEAL, INSCRIBED_POWER, WAND_PRESERVATION, ARCANE_VISION, SHIELD_BATTERY, FASTER_CHARGER);
+ 				break;
++			case NECROMANCER:
++				Collections.addAll(tierTalents, GRAVE_FROST, VAMPIRIC_TOUCH, SPECTRAL_SPEED, DARK_MEND, DEATH_BOND, DOUBLE_SOUL);
++				break;
+ 			case ROGUE:
+ 				Collections.addAll(tierTalents, MYSTICAL_MEAL, INSCRIBED_STEALTH, WIDE_SEARCH, SILENT_STEPS, ROGUES_FORESIGHT, MOVESPEED_ENHANCE);
+ 				break;
+@@ -2775,6 +2812,9 @@ public enum Talent {
+ 			case MAGE:
+ 				Collections.addAll(tierTalents, DESPERATE_POWER, ALLY_WARP);
+ 				break;
++			case NECROMANCER:
++				Collections.addAll(tierTalents, SOUL_VAULT, OVERLORD);
++				break;
+ 			case ROGUE:
+ 				Collections.addAll(tierTalents, ENHANCED_RINGS, LIGHT_CLOAK);
+ 				break;
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/ArmyOfTheDead.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/ArmyOfTheDead.java
+new file mode 100644
+index 00000000..937b286b
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/ArmyOfTheDead.java
+@@ -0,0 +1,53 @@
++package com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.necromancer;
++
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.ArmorAbility;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.ClassArmor;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.NecromancerGrimoire;
++import com.shatteredpixel.shatteredpixeldungeon.ui.HeroIcon;
++
++/** Necromancer armor ability. Costs no armor charge. */
++public class ArmyOfTheDead extends ArmorAbility {
++
++	{
++		baseChargeUse = 0f;
++	}
++
++	@Override
++	public float chargeUse( Hero hero ) {
++		return 0f;
++	}
++
++	@Override
++	protected void activate( ClassArmor armor, Hero hero, Integer target ) {
++		if (NecromancerGrimoire.summonSouls(hero)) {
++			hero.spendAndNext( 1f );
++		}
++	}
++
++	@Override
++	public String name() {
++		return "Army of the Dead";
++	}
++
++	@Override
++	public String shortDesc() {
++		return "Raises every soul stored in your grimoire as an undead servant at once.";
++	}
++
++	@Override
++	public String desc() {
++		return "Raises every soul stored in your grimoire as an undead servant at once. Costs no armor charge.";
++	}
++
++	@Override
++	public int icon() {
++		return HeroIcon.ELEMENTAL_BLAST;
++	}
++
++	@Override
++	public Talent[] talents() {
++		return new Talent[]{Talent.LEGION_VIGOR, Talent.RISEN_RAGE, Talent.HEROIC_ENERGY};
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/BoneFortress.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/BoneFortress.java
+new file mode 100644
+index 00000000..118705e4
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/BoneFortress.java
+@@ -0,0 +1,53 @@
++package com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.necromancer;
++
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.ArmorAbility;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.ClassArmor;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.NecromancerGrimoire;
++import com.shatteredpixel.shatteredpixeldungeon.ui.HeroIcon;
++
++/** Necromancer armor ability. Costs no armor charge. */
++public class BoneFortress extends ArmorAbility {
++
++	{
++		baseChargeUse = 0f;
++	}
++
++	@Override
++	public float chargeUse( Hero hero ) {
++		return 0f;
++	}
++
++	@Override
++	protected void activate( ClassArmor armor, Hero hero, Integer target ) {
++		if (NecromancerGrimoire.boneArmor(hero)) {
++			hero.spendAndNext( 1f );
++		}
++	}
++
++	@Override
++	public String name() {
++		return "Bone Fortress";
++	}
++
++	@Override
++	public String shortDesc() {
++		return "Wraps you and your undead servants in barriers of bone.";
++	}
++
++	@Override
++	public String desc() {
++		return "Wraps you and your undead servants in barriers of bone. Costs no armor charge.";
++	}
++
++	@Override
++	public int icon() {
++		return HeroIcon.WARP_BEACON;
++	}
++
++	@Override
++	public Talent[] talents() {
++		return new Talent[]{Talent.THICK_MARROW, Talent.SHARED_ARMOR, Talent.HEROIC_ENERGY};
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/DeathPulse.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/DeathPulse.java
+new file mode 100644
+index 00000000..35aa7288
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/hero/abilities/necromancer/DeathPulse.java
+@@ -0,0 +1,53 @@
++package com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.necromancer;
++
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.abilities.ArmorAbility;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.ClassArmor;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.NecromancerGrimoire;
++import com.shatteredpixel.shatteredpixeldungeon.ui.HeroIcon;
++
++/** Necromancer armor ability. Costs no armor charge. */
++public class DeathPulse extends ArmorAbility {
++
++	{
++		baseChargeUse = 0f;
++	}
++
++	@Override
++	public float chargeUse( Hero hero ) {
++		return 0f;
++	}
++
++	@Override
++	protected void activate( ClassArmor armor, Hero hero, Integer target ) {
++		if (NecromancerGrimoire.soulDrain(hero) | NecromancerGrimoire.deathNova(hero)) {
++			hero.spendAndNext( 1f );
++		}
++	}
++
++	@Override
++	public String name() {
++		return "Death Pulse";
++	}
++
++	@Override
++	public String shortDesc() {
++		return "Drains the life of every enemy in sight, then your undead release a deathly pulse.";
++	}
++
++	@Override
++	public String desc() {
++		return "Drains the life of every enemy in sight, then your undead release a deathly pulse. Costs no armor charge.";
++	}
++
++	@Override
++	public int icon() {
++		return HeroIcon.WILD_MAGIC;
++	}
++
++	@Override
++	public Talent[] talents() {
++		return new Talent[]{Talent.PULSE_REACH, Talent.CORPSE_FEAST, Talent.HEROIC_ENERGY};
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/mobs/Mob.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/mobs/Mob.java
+index a34e15a8..5cad87fd 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/mobs/Mob.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/actors/mobs/Mob.java
+@@ -27,6 +27,7 @@ import com.shatteredpixel.shatteredpixeldungeon.Assets;
+ import com.shatteredpixel.shatteredpixeldungeon.Badges;
+ import com.shatteredpixel.shatteredpixeldungeon.Challenges;
+ import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.NecromancerGrimoire;
+ import com.shatteredpixel.shatteredpixeldungeon.Statistics;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
+ import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
+@@ -958,6 +959,8 @@ public abstract class Mob extends Char {
+ 	@Override
+ 	public void die( Object cause ) {
+ 
++		NecromancerGrimoire.onMobKilled(this, cause);
++
+ 		if (cause == Chasm.class){
+ 			//50% chance to round up, 50% to round down
+ 			if (EXP % 2 == 1) EXP += Random.Int(2);
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModCurse.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModCurse.java
+new file mode 100644
+index 00000000..2eab8ff2
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModCurse.java
+@@ -0,0 +1,91 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.*;
++import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.utils.Bundle;
++import com.watabou.utils.Random;
++
++/** A table-driven weapon curse: effect kind x intensity, see ModData. */
++public class ModCurse extends Weapon.Enchantment {
++
++	private static final String CURSE_ID = "curse_id";
++	private static final ItemSprite.Glowing DARK = new ItemSprite.Glowing(0x400010);
++	public int id = 0;
++
++	public ModCurse() {
++		this(0);
++	}
++
++	public ModCurse(int id) {
++		this.id = id;
++	}
++
++	@Override
++	public int proc(Weapon weapon, Char attacker, Char defender, int damage) {
++		int kind = id / 3;
++		int level = id % 3;
++		float chance = (0.2f + 0.1f * level) * procChanceMultiplier(attacker);
++		if (Random.Float() >= chance) return damage;
++
++		switch (kind) {
++			case 0: attacker.damage(Math.max(1, Math.round(damage * (0.1f + 0.1f * level))), this); break;
++			case 1: {
++				Hunger h = attacker.buff(Hunger.class);
++				if (h != null) h.affectHunger(-(20f + 25f * level));
++				break;
++			}
++			case 2: Buff.prolong(attacker, Slow.class, 3f + 2f * level); break;
++			case 3: Buff.prolong(attacker, Weakness.class, 6f + 4f * level); break;
++			case 4: Buff.prolong(attacker, Blindness.class, 2f + level); break;
++			case 5: Buff.prolong(attacker, Vulnerable.class, 4f + 3f * level); break;
++			case 6: Buff.affect(attacker, Bleeding.class).set(2f + 2f * level); break;
++			case 7: Buff.affect(attacker, Poison.class).set(2f + 2f * level); break;
++			case 8:
++				for (Mob mob : Dungeon.level.mobs.toArray(new Mob[0])) mob.beckon(attacker.pos);
++				break;
++			case 9: Dungeon.gold = Math.max(0, Dungeon.gold - (5 + 15 * level * level)); break;
++		}
++		GLog.n("Your cursed weapon bites back!");
++		return damage;
++	}
++
++	@Override
++	public boolean curse() {
++		return true;
++	}
++
++	@Override
++	public String name(String weaponName) {
++		return ModData.curseName(id) + " " + weaponName;
++	}
++
++	@Override
++	public String name() {
++		return ModData.curseName(id);
++	}
++
++	@Override
++	public String desc() {
++		return ModData.CURSE_DESC[id / 3];
++	}
++
++	@Override
++	public ItemSprite.Glowing glowing() {
++		return DARK;
++	}
++
++	@Override
++	public void storeInBundle(Bundle bundle) {
++		bundle.put(CURSE_ID, id);
++	}
++
++	@Override
++	public void restoreFromBundle(Bundle bundle) {
++		id = bundle.getInt(CURSE_ID);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModData.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModData.java
+new file mode 100644
+index 00000000..403ddd42
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModData.java
+@@ -0,0 +1,219 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.enchantments.Blazing;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.enchantments.Vampiric;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.enchantments.Venomous;
++import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++
++/** All tables for the mod content. Everything is addressed by (category, id). */
++public class ModData {
++
++	public static final int WEAPONS = 0, WANDS = 1, SCROLLS = 2, SPELLS = 3, CURSES = 4;
++	public static final String[] CATEGORY_NAMES = {"Weapons", "Wands", "Scrolls", "Spells", "Curses"};
++
++	// ---------------------------------------------------------------- weapons (16 bases x 6 mods)
++	private static final String[] W_BASE = {"Dagger", "Rapier", "Sai", "Spear", "Mace", "Scimitar", "Katana", "Whip",
++			"Longsword", "Battle Axe", "Flail", "Glaive", "War Hammer", "Greatsword", "Greataxe", "War Scythe"};
++	private static final int[] W_SPRITE = {ItemSpriteSheet.DAGGER, ItemSpriteSheet.RAPIER, ItemSpriteSheet.SAI, ItemSpriteSheet.SPEAR,
++			ItemSpriteSheet.MACE, ItemSpriteSheet.SCIMITAR, ItemSpriteSheet.KATANA, ItemSpriteSheet.WHIP,
++			ItemSpriteSheet.LONGSWORD, ItemSpriteSheet.BATTLE_AXE, ItemSpriteSheet.FLAIL, ItemSpriteSheet.GLAIVE,
++			ItemSpriteSheet.WAR_HAMMER, ItemSpriteSheet.GREATSWORD, ItemSpriteSheet.GREATAXE, ItemSpriteSheet.WAR_SCYTHE};
++	private static final int[] W_TIER = {1, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5};
++
++	private static final String[] W_MOD = {"Swift", "Heavy", "Reaching", "Vampiric", "Blazing", "Venomous"};
++	private static final float[] W_MOD_DMG = {0.8f, 1.5f, 1.0f, 1.0f, 1.0f, 1.0f};
++	private static final float[] W_MOD_ACC = {1.0f, 0.9f, 1.0f, 1.0f, 1.0f, 1.0f};
++	private static final float[] W_MOD_DLY = {0.5f, 1.5f, 1.0f, 1.0f, 1.0f, 1.0f};
++	private static final int[]   W_MOD_RCH = {0, 0, 1, 0, 0, 0};
++	private static final String[] W_MOD_DESC = {
++			"Attacks twice as fast, at a cost of damage.",
++			"Hits much harder but swings slowly and less accurately.",
++			"Strikes from one tile further away.",
++			"Drains life from enemies you hit.",
++			"Sets enemies ablaze.",
++			"Poisons enemies you hit."};
++
++	public static int weaponCount() { return W_BASE.length * W_MOD.length; }
++	public static String weaponName(int id)  { return W_MOD[id % 6] + " " + W_BASE[id / 6]; }
++	public static int weaponSprite(int id)   { return W_SPRITE[id / 6]; }
++	public static int weaponTier(int id)     { return W_TIER[id / 6]; }
++	public static float weaponDmg(int id)    { return W_MOD_DMG[id % 6]; }
++	public static float weaponAcc(int id)    { return W_MOD_ACC[id % 6]; }
++	public static float weaponDly(int id)    { return W_MOD_DLY[id % 6]; }
++	public static int weaponReach(int id)    { return 1 + W_MOD_RCH[id % 6]; }
++	public static String weaponDesc(int id)  { return W_MOD_DESC[id % 6]; }
++	public static Weapon.Enchantment weaponEnchant(int id) {
++		switch (id % 6) {
++			case 3: return new Vampiric();
++			case 4: return new Blazing();
++			case 5: return new Venomous();
++			default: return null;
++		}
++	}
++
++	// ---------------------------------------------------------------- wands (16 kinds x 3 powers)
++	private static final String[][] WAND_NAMES = {
++			{"Spark", "Bolt of Ruin", "Annihilation"},
++			{"Cinders", "Inferno", "Dragonfire"},
++			{"Frostbite", "Glacier", "Absolute Zero"},
++			{"Venom", "Plague", "Black Death"},
++			{"Numbing", "Stasis", "Petrification"},
++			{"Sluggishness", "Quicksand", "Time Drag"},
++			{"Dusk", "Eclipse", "Void"},
++			{"Fatigue", "Withering", "Decay"},
++			{"Exposure", "Fragility", "Shattering"},
++			{"Hobbling", "Crippling", "Maiming"},
++			{"Fright", "Dread", "Nightmares"},
++			{"Charm", "Devotion", "Obsession"},
++			{"Displacement", "Banishing", "Exile"},
++			{"Leeching", "Siphoning", "Soul Drain"},
++			{"Jinx", "Hexing", "Doom"},
++			{"Lullaby", "Slumber", "Eternal Sleep"}};
++	private static final int[] WAND_SPRITE = {
++			ItemSpriteSheet.WAND_MAGIC_MISSILE, ItemSpriteSheet.WAND_FIREBOLT, ItemSpriteSheet.WAND_FROST, ItemSpriteSheet.WAND_CORROSION,
++			ItemSpriteSheet.WAND_LIGHTNING, ItemSpriteSheet.WAND_LIVING_EARTH, ItemSpriteSheet.WAND_DISINTEGRATION, ItemSpriteSheet.WAND_REGROWTH,
++			ItemSpriteSheet.WAND_BLAST_WAVE, ItemSpriteSheet.WAND_WARDING, ItemSpriteSheet.WAND_PRISMATIC_LIGHT, ItemSpriteSheet.WAND_CORRUPTION,
++			ItemSpriteSheet.WAND_BLAST_WAVE, ItemSpriteSheet.WAND_TRANSFUSION, ItemSpriteSheet.WAND_CORRUPTION, ItemSpriteSheet.WAND_PRISMATIC_LIGHT};
++	private static final String[] WAND_EFFECT_DESC = {
++			"deals magic damage", "sets the target on fire", "chills and slows the target", "poisons the target",
++			"briefly paralyzes the target", "slows the target", "blinds the target", "weakens the target",
++			"makes the target take extra damage", "cripples the target's movement", "terrifies the target", "charms the target",
++			"teleports the target away", "damages the target and heals you", "hexes the target", "puts the target to sleep"};
++
++	public static int wandCount() { return WAND_NAMES.length * 3; }
++	public static String wandName(int id)   { return "Wand of " + WAND_NAMES[id / 3][id % 3]; }
++	public static int wandSprite(int id)    { return WAND_SPRITE[id / 3]; }
++	public static int wandKind(int id)      { return id / 3; }
++	public static int wandPower(int id)     { return id % 3 + 1; }
++	public static int wandCharges(int id)   { return 2 + id % 3; }
++	public static int wandMissile(int id) {
++		int[] m = {0, 2, 1, 15, 0, 9, 7, 4, 5, 10, 8, 14, 6, 11, 13, 12};
++		return m[id / 3];
++	}
++	public static String wandDesc(int id)  { return "A wand that " + WAND_EFFECT_DESC[id / 3] + ". Power " + wandPower(id) + " of 3."; }
++
++	// ---------------------------------------------------------------- scrolls (18 kinds x 3 powers + 6 single)
++	private static final String[] SCROLL_NOUN = {"Mending", "Swiftness", "Vanishing", "Floating", "Warding", "Blessing", "Third Eye",
++			"Radiance", "Recharging", "Foresight", "Dread", "Stillness", "Dusk", "Slumber", "Ruin", "Fortune", "Insight", "Ascension",
++			"Warping", "Cartography", "Purification", "Revelation", "Cleansing", "Feasting"};
++	private static final int[] SCROLL_SPRITE = {
++			ItemSpriteSheet.SCROLL_KAUNAN, ItemSpriteSheet.SCROLL_SOWILO, ItemSpriteSheet.SCROLL_LAGUZ, ItemSpriteSheet.SCROLL_YNGVI,
++			ItemSpriteSheet.SCROLL_GYFU, ItemSpriteSheet.SCROLL_RAIDO, ItemSpriteSheet.SCROLL_ISAZ, ItemSpriteSheet.SCROLL_MANNAZ,
++			ItemSpriteSheet.SCROLL_NAUDIZ, ItemSpriteSheet.SCROLL_BERKANAN, ItemSpriteSheet.SCROLL_ODAL, ItemSpriteSheet.SCROLL_TIWAZ,
++			ItemSpriteSheet.SCROLL_PLUS, ItemSpriteSheet.EXOTIC_SCROLL_PLUS};
++	private static final String[] POWER_PREFIX = {"Lesser ", "", "Greater "};
++	private static final String[] SCROLL_DESC = {
++			"Restores health.", "Grants a burst of speed.", "Makes you invisible for a while.", "Lets you float over hazards.",
++			"Surrounds you with a protective barrier.", "Blesses you, improving accuracy and evasion.", "Lets you sense nearby creatures.",
++			"Lights up your surroundings.", "Recharges your wands and artifacts.", "Lets you glimpse what lies ahead.",
++			"Terrifies enemies in sight.", "Slows enemies in sight.", "Blinds enemies in sight.", "Puts enemies in sight to sleep.",
++			"Blasts all enemies in sight with magic damage.", "Showers you with gold.", "Grants experience.", "Upgrades your equipped weapon.",
++			"Teleports you to a random spot on this floor.", "Reveals the layout of this floor.", "Removes curses from your items.",
++			"Identifies everything you carry.", "Cleanses harmful effects.", "Satisfies your hunger."};
++
++	public static int scrollCount() { return 18 * 3 + 6; }
++	public static int scrollKind(int id)  { return id < 54 ? id / 3 : 18 + (id - 54); }
++	public static int scrollPower(int id) { return id < 54 ? id % 3 + 1 : 1; }
++	public static String scrollName(int id) {
++		int k = scrollKind(id);
++		return "Scroll of " + (id < 54 ? POWER_PREFIX[id % 3] : "") + SCROLL_NOUN[k];
++	}
++	public static int scrollSprite(int id) { return SCROLL_SPRITE[scrollKind(id) % SCROLL_SPRITE.length]; }
++	public static String scrollDesc(int id) { return SCROLL_DESC[scrollKind(id)] + (id < 54 ? " Power " + scrollPower(id) + " of 3." : ""); }
++
++	// ---------------------------------------------------------------- spells (12 reusable kinds x 3 powers)
++	private static final int[] SPELL_KIND = {ModEffects.HEAL, ModEffects.HASTE, ModEffects.INVIS, ModEffects.LEVITATE,
++			ModEffects.SHIELD, ModEffects.BLESS, ModEffects.TERROR, ModEffects.SLOW, ModEffects.BLIND, ModEffects.SLEEP,
++			ModEffects.BLAST, ModEffects.TELEPORT};
++	private static final String[] SPELL_NOUN = {"Healing Light", "Quickening", "Veil", "Featherfall", "Aegis", "Benediction",
++			"Panic", "Frost Touch", "Blindfold", "Dreamweave", "Arcane Burst", "Blink"};
++	private static final int[] SPELL_SPRITE = {
++			ItemSpriteSheet.HEALING_BOOK, ItemSpriteSheet.BOOK_OF_LIGHT, ItemSpriteSheet.BOOK_OF_MAGIC, ItemSpriteSheet.BOOK_OF_EARTH,
++			ItemSpriteSheet.BOOK_OF_WARDING, ItemSpriteSheet.BOOK_OF_REGROWTH, ItemSpriteSheet.BOOK_OF_CORRUPTION, ItemSpriteSheet.BOOK_OF_FROST,
++			ItemSpriteSheet.BOOK_OF_DISINTEGRATION, ItemSpriteSheet.BOOK_OF_TRANSFUSION, ItemSpriteSheet.BOOK_OF_BLAST, ItemSpriteSheet.BOOK_OF_THUNDERBOLT};
++	private static final int[] SPELL_COOLDOWN = {40, 70, 100};
++
++	public static int spellCount() { return SPELL_KIND.length * 3; }
++	public static int spellKind(int id)  { return SPELL_KIND[id / 3]; }
++	public static int spellPower(int id) { return id % 3 + 1; }
++	public static int spellCooldown(int id) { return SPELL_COOLDOWN[id % 3]; }
++	public static String spellName(int id) { return "Spell: " + POWER_PREFIX[id % 3] + SPELL_NOUN[id / 3]; }
++	public static int spellSprite(int id) { return SPELL_SPRITE[id / 3]; }
++	public static String spellDesc(int id) {
++		return "A reusable spell. " + SCROLL_DESC[spellKind(id)] + " Power " + spellPower(id) + " of 3. Recharges in "
++				+ spellCooldown(id) + " turns.";
++	}
++
++	// ---------------------------------------------------------------- curses (10 kinds x 3 intensities)
++	public static final String[] CURSE_NAME = {"Backlash", "Famine", "Sluggishness", "Feebleness", "Blindness", "Fragility",
++			"Bleeding", "Toxicity", "Clamor", "Greed"};
++	public static final String[] CURSE_DESC = {
++			"Sometimes hurts you for part of the damage you deal.", "Sometimes drains your food reserves.",
++			"Sometimes slows you down.", "Sometimes weakens you.", "Sometimes blinds you.", "Sometimes leaves you vulnerable.",
++			"Sometimes makes you bleed.", "Sometimes poisons you.", "Sometimes alerts every enemy on the floor.",
++			"Sometimes costs you gold."};
++	public static final String[] CURSE_TIER = {"I", "II", "III"};
++
++	public static int curseCount() { return CURSE_NAME.length * 3; }
++	public static String curseName(int id) { return "Curse of " + CURSE_NAME[id / 3] + " " + CURSE_TIER[id % 3]; }
++
++	// ---------------------------------------------------------------- catalog helpers
++	public static int count(int category) {
++		switch (category) {
++			case WEAPONS: return weaponCount();
++			case WANDS:   return wandCount();
++			case SCROLLS: return scrollCount();
++			case SPELLS:  return spellCount();
++			default:      return curseCount();
++		}
++	}
++
++	public static String name(int category, int id) {
++		switch (category) {
++			case WEAPONS: return weaponName(id);
++			case WANDS:   return wandName(id);
++			case SCROLLS: return scrollName(id);
++			case SPELLS:  return spellName(id);
++			default:      return curseName(id);
++		}
++	}
++
++	/** Gives the item to the hero (or applies a curse to the equipped weapon). */
++	public static void give(int category, int id) {
++		Hero hero = Dungeon.hero;
++		if (hero == null || !hero.isAlive()) return;
++		Item item;
++		switch (category) {
++			case WEAPONS: item = new ModWeapon(id); break;
++			case WANDS:   item = new ModWand(id); break;
++			case SCROLLS: item = new ModScroll(id); break;
++			case SPELLS:  item = new ModSpell(id); break;
++			default: {
++				if (!(hero.belongings.weapon() instanceof Weapon)) {
++					GLog.w("Equip a weapon first - curses are applied to it.");
++					return;
++				}
++				Weapon w = (Weapon) hero.belongings.weapon();
++				w.enchant(new ModCurse(id));
++				w.cursed = true;
++				w.cursedKnown = true;
++				GLog.n("Your weapon is cursed: " + curseName(id) + "!");
++				Item.updateQuickslot();
++				return;
++			}
++		}
++		item.identify();
++		if (item.collect(hero.belongings.backpack)) {
++			GLog.p("Added " + item.name() + ".");
++			Item.updateQuickslot();
++		} else {
++			Dungeon.level.drop(item, hero.pos).sprite.drop();
++			GLog.w("Pack full - " + item.name() + " dropped at your feet.");
++		}
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModEffects.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModEffects.java
+new file mode 100644
+index 00000000..33cbe035
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModEffects.java
+@@ -0,0 +1,148 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.*;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
++import com.shatteredpixel.shatteredpixeldungeon.effects.Speck;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHealing;
++import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRecharging;
++import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfRemoveCurse;
++import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfTeleportation;
++import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.utils.Random;
++
++import java.util.ArrayList;
++
++/** Shared effect engine for mod scrolls, spells and wands. */
++public class ModEffects {
++
++	// self / area effects (scrolls and spells)
++	public static final int HEAL = 0, HASTE = 1, INVIS = 2, LEVITATE = 3, SHIELD = 4, BLESS = 5,
++			MIND = 6, LIGHT = 7, RECHARGE = 8, FORESIGHT = 9, TERROR = 10, SLOW = 11, BLIND = 12,
++			SLEEP = 13, BLAST = 14, GOLD = 15, XP = 16, UPGRADE = 17,
++			TELEPORT = 18, MAP = 19, UNCURSE = 20, IDENTIFY = 21, CLEANSE = 22, FEED = 23;
++
++	private static ArrayList<Mob> visibleMobs() {
++		ArrayList<Mob> list = new ArrayList<>();
++		for (Mob m : Dungeon.level.mobs.toArray(new Mob[0])) {
++			if (m.isAlive() && Dungeon.level.heroFOV[m.pos] && m.alignment != Char.Alignment.ALLY) list.add(m);
++		}
++		return list;
++	}
++
++	/** Applies a self/area effect. power is 1..3. Returns false if nothing happened. */
++	public static boolean apply(int kind, int power, Hero hero) {
++		float p = power;
++		switch (kind) {
++			case HEAL: {
++				int amt = Math.round(hero.HT * Math.min(1f, 0.3f * p + 0.1f));
++				hero.HP = Math.min(hero.HT, hero.HP + amt);
++				PotionOfHealing.cure(hero);
++				hero.sprite.emitter().burst(Speck.factory(Speck.HEALING), 4);
++				GLog.p("You feel much better!");
++				return true;
++			}
++			case HASTE:    Buff.prolong(hero, Haste.class, 8f * p); GLog.p("You speed up!"); return true;
++			case INVIS:    Buff.prolong(hero, Invisibility.class, 10f * p); GLog.p("You fade from sight."); return true;
++			case LEVITATE: Buff.prolong(hero, Levitation.class, 10f * p); GLog.p("You float above the ground."); return true;
++			case SHIELD:   Buff.affect(hero, Barrier.class).setShield(Math.round(hero.HT * 0.25f * p)); GLog.p("A barrier surrounds you."); return true;
++			case BLESS:    Buff.prolong(hero, Bless.class, 20f * p); GLog.p("You feel blessed."); return true;
++			case MIND:     Buff.prolong(hero, MindVision.class, 20f * p); Dungeon.observe(); GLog.p("You sense your surroundings."); return true;
++			case LIGHT:    Buff.prolong(hero, Light.class, 100f * p); Dungeon.observe(); GLog.p("Your surroundings glow."); return true;
++			case RECHARGE: ScrollOfRecharging.charge(hero); Buff.affect(hero, Recharging.class, 6f * p); GLog.p("Your magic items hum with power."); return true;
++			case FORESIGHT: Buff.prolong(hero, Foresight.class, 20f * p); GLog.p("You glimpse ahead."); return true;
++			case TERROR: case SLOW: case BLIND: case SLEEP: case BLAST: {
++				ArrayList<Mob> mobs = visibleMobs();
++				if (mobs.isEmpty()) { GLog.i("Nothing happens - no enemies in sight."); return true; }
++				for (Mob m : mobs) {
++					if (kind == TERROR)      Buff.prolong(m, Terror.class, 6f * p);
++					else if (kind == SLOW)   Buff.prolong(m, Slow.class, 6f * p);
++					else if (kind == BLIND)  Buff.prolong(m, Blindness.class, 6f * p);
++					else if (kind == SLEEP)  Buff.affect(m, MagicalSleep.class);
++					else m.damage(Random.NormalIntRange(4 * power + hero.lvl, 10 * power + 2 * hero.lvl), hero);
++				}
++				GLog.p("Your magic washes over your enemies.");
++				return true;
++			}
++			case GOLD: Dungeon.gold += 200 * power * power; GLog.p("Gold rains down on you!"); return true;
++			case XP:   hero.earnExp(5 * power * power * Math.max(1, hero.lvl), ModEffects.class); return true;
++			case UPGRADE: {
++				Item w = hero.belongings.weapon();
++				if (w == null) { GLog.w("You need a weapon equipped."); return false; }
++				for (int i = 0; i < power; i++) w.upgrade();
++				GLog.p("Your weapon gleams.");
++				return true;
++			}
++			case TELEPORT: ScrollOfTeleportation.teleportChar(hero); return true;
++			case MAP: {
++				int length = Dungeon.level.length();
++				for (int i = 0; i < length; i++) {
++					if (Dungeon.level.discoverable[i]) {
++						Dungeon.level.mapped[i] = true;
++						if ((Terrain.flags[Dungeon.level.map[i]] & Terrain.SECRET) != 0) Dungeon.level.discover(i);
++					}
++				}
++				GameScene.updateMap();
++				Dungeon.observe();
++				GLog.p("The layout of this floor is revealed.");
++				return true;
++			}
++			case UNCURSE: {
++				ArrayList<Item> items = new ArrayList<>();
++				for (Item i : hero.belongings) items.add(i);
++				ScrollOfRemoveCurse.uncurse(hero, items.toArray(new Item[0]));
++				GLog.p("A weight lifts from your belongings.");
++				return true;
++			}
++			case IDENTIFY: for (Item i : hero.belongings) i.identify(); GLog.p("Everything you carry is identified."); return true;
++			case CLEANSE:  PotionOfHealing.cure(hero); GLog.p("You feel cleansed."); return true;
++			case FEED: {
++				Hunger h = hero.buff(Hunger.class);
++				if (h != null) h.satisfy(Hunger.STARVING);
++				GLog.p("You feel well fed.");
++				return true;
++			}
++		}
++		return false;
++	}
++
++	// wand effects (applied to a target)
++	public static final int W_DAMAGE = 0, W_BURN = 1, W_CHILL = 2, W_POISON = 3, W_PARALYZE = 4, W_SLOW = 5,
++			W_BLIND = 6, W_WEAKEN = 7, W_VULN = 8, W_CRIPPLE = 9, W_TERROR = 10, W_CHARM = 11,
++			W_TELEPORT = 12, W_LEECH = 13, W_HEX = 14, W_SLEEP = 15;
++
++	public static void hit(int kind, int power, Hero user, Char ch, int bonusLvl) {
++		float d = 3f + 4f * power;   // durations 7 / 11 / 15
++		int lvl = Math.max(0, bonusLvl);
++		switch (kind) {
++			case W_DAMAGE: ch.damage(Random.NormalIntRange(3 * power + lvl, 9 * power + 3 * lvl), user); break;
++			case W_BURN:   Buff.affect(ch, Burning.class).reignite(ch); ch.damage(Random.NormalIntRange(1 + power, 4 * power + lvl), user); break;
++			case W_CHILL:  Buff.prolong(ch, Chill.class, d); Buff.prolong(ch, Slow.class, d); break;
++			case W_POISON: Buff.affect(ch, Poison.class).set(4f * power + lvl + 2f); break;
++			case W_PARALYZE: Buff.prolong(ch, Paralysis.class, 2f + power + lvl * 0.5f); break;
++			case W_SLOW:   Buff.prolong(ch, Slow.class, d + lvl); break;
++			case W_BLIND:  Buff.prolong(ch, Blindness.class, d + lvl); break;
++			case W_WEAKEN: Buff.prolong(ch, Weakness.class, d * 2f + lvl); break;
++			case W_VULN:   Buff.prolong(ch, Vulnerable.class, d + lvl); break;
++			case W_CRIPPLE: Buff.prolong(ch, Cripple.class, d + lvl); break;
++			case W_TERROR: Buff.affect(ch, Terror.class, d).object = user.id(); break;
++			case W_CHARM:  Buff.affect(ch, Charm.class, d).object = user.id(); break;
++			case W_TELEPORT: ScrollOfTeleportation.teleportChar(ch); break;
++			case W_LEECH: {
++				int dmg = Random.NormalIntRange(2 * power + lvl, 6 * power + 2 * lvl);
++				ch.damage(dmg, user);
++				user.HP = Math.min(user.HT, user.HP + dmg);
++				user.sprite.emitter().burst(Speck.factory(Speck.HEALING), 2);
++				break;
++			}
++			case W_HEX:    Buff.prolong(ch, Hex.class, d + lvl); break;
++			case W_SLEEP:  Buff.affect(ch, MagicalSleep.class); break;
++		}
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModScroll.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModScroll.java
+new file mode 100644
+index 00000000..d837be2f
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModScroll.java
+@@ -0,0 +1,96 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Assets;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.noosa.audio.Sample;
++import com.watabou.utils.Bundle;
++
++import java.util.ArrayList;
++
++/** A single-use scroll whose effect comes from ModEffects. */
++public class ModScroll extends Item {
++
++	private static final String AC_READ = "READ";
++	private static final String MOD_ID = "mod_id";
++	public int modId = 0;
++
++	{
++		defaultAction = AC_READ;
++		stackable = true;
++	}
++
++	public ModScroll() {
++		this(0);
++	}
++
++	public ModScroll(int id) {
++		modId = id;
++		image = ModData.scrollSprite(id);
++	}
++
++	@Override
++	public ArrayList<String> actions(Hero hero) {
++		ArrayList<String> actions = super.actions(hero);
++		actions.add(AC_READ);
++		return actions;
++	}
++
++	@Override
++	public void execute(Hero hero, String action) {
++		super.execute(hero, action);
++		if (action.equals(AC_READ)) {
++			if (ModEffects.apply(ModData.scrollKind(modId), ModData.scrollPower(modId), hero)) {
++				Sample.INSTANCE.play(Assets.Sounds.READ);
++				detach(hero.belongings.backpack);
++				hero.spend(1f);
++				hero.busy();
++				hero.sprite.operate(hero.pos);
++			}
++		}
++	}
++
++	@Override
++	public boolean isUpgradable() {
++		return false;
++	}
++
++	@Override
++	public boolean isIdentified() {
++		return true;
++	}
++
++	@Override
++	public boolean isSimilar(Item item) {
++		return item instanceof ModScroll && ((ModScroll) item).modId == modId;
++	}
++
++	@Override
++	public String name() {
++		return ModData.scrollName(modId);
++	}
++
++	@Override
++	public String desc() {
++		return ModData.scrollDesc(modId);
++	}
++
++	@Override
++	public int value() {
++		return 30 * quantity;
++	}
++
++	@Override
++	public void storeInBundle(Bundle bundle) {
++		super.storeInBundle(bundle);
++		bundle.put(MOD_ID, modId);
++	}
++
++	@Override
++	public void restoreFromBundle(Bundle bundle) {
++		super.restoreFromBundle(bundle);
++		modId = bundle.getInt(MOD_ID);
++		image = ModData.scrollSprite(modId);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModSpell.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModSpell.java
+new file mode 100644
+index 00000000..89d780d2
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModSpell.java
+@@ -0,0 +1,101 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Assets;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.noosa.audio.Sample;
++import com.watabou.utils.Bundle;
++
++import java.util.ArrayList;
++
++/** A reusable spell with a cooldown measured in game turns. */
++public class ModSpell extends Item {
++
++	private static final String AC_CAST = "CAST";
++	private static final String MOD_ID = "mod_id";
++	private static final String READY_AT = "ready_at";
++	public int modId = 0;
++	private float readyAt = 0f;
++
++	{
++		defaultAction = AC_CAST;
++		unique = true;
++	}
++
++	public ModSpell() {
++		this(0);
++	}
++
++	public ModSpell(int id) {
++		modId = id;
++		image = ModData.spellSprite(id);
++	}
++
++	@Override
++	public ArrayList<String> actions(Hero hero) {
++		ArrayList<String> actions = super.actions(hero);
++		actions.add(AC_CAST);
++		return actions;
++	}
++
++	@Override
++	public void execute(Hero hero, String action) {
++		super.execute(hero, action);
++		if (action.equals(AC_CAST)) {
++			float now = Actor.now();
++			if (now < readyAt) {
++				GLog.w("The spell is recharging (" + Math.round(readyAt - now) + " turns left).");
++				return;
++			}
++			if (ModEffects.apply(ModData.spellKind(modId), ModData.spellPower(modId), hero)) {
++				readyAt = now + ModData.spellCooldown(modId);
++				Sample.INSTANCE.play(Assets.Sounds.READ);
++				hero.spend(1f);
++				hero.busy();
++				hero.sprite.operate(hero.pos);
++			}
++		}
++	}
++
++	@Override
++	public boolean isUpgradable() {
++		return false;
++	}
++
++	@Override
++	public boolean isIdentified() {
++		return true;
++	}
++
++	@Override
++	public String name() {
++		return ModData.spellName(modId);
++	}
++
++	@Override
++	public String desc() {
++		return ModData.spellDesc(modId);
++	}
++
++	@Override
++	public int value() {
++		return 100;
++	}
++
++	@Override
++	public void storeInBundle(Bundle bundle) {
++		super.storeInBundle(bundle);
++		bundle.put(MOD_ID, modId);
++		bundle.put(READY_AT, readyAt);
++	}
++
++	@Override
++	public void restoreFromBundle(Bundle bundle) {
++		super.restoreFromBundle(bundle);
++		modId = bundle.getInt(MOD_ID);
++		readyAt = bundle.getFloat(READY_AT);
++		image = ModData.spellSprite(modId);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModWand.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModWand.java
+new file mode 100644
+index 00000000..9fffb4db
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModWand.java
+@@ -0,0 +1,89 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Assets;
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
++import com.shatteredpixel.shatteredpixeldungeon.effects.MagicMissile;
++import com.shatteredpixel.shatteredpixeldungeon.items.wands.Wand;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MagesStaff;
++import com.shatteredpixel.shatteredpixeldungeon.mechanics.Ballistica;
++import com.watabou.noosa.audio.Sample;
++import com.watabou.utils.Bundle;
++import com.watabou.utils.Callback;
++
++/** A table-driven wand: effect kind x power, see ModData / ModEffects. */
++public class ModWand extends Wand {
++
++	private static final String MOD_ID = "mod_id";
++	public int modId = 0;
++
++	public ModWand() {
++		this(0);
++	}
++
++	public ModWand(int id) {
++		setMod(id);
++		maxCharges = initialCharges();
++		curCharges = maxCharges;
++	}
++
++	private void setMod(int id) {
++		modId = id;
++		image = ModData.wandSprite(id);
++	}
++
++	@Override
++	public int initialCharges() {
++		return ModData.wandCharges(modId);
++	}
++
++	@Override
++	public void onZap(Ballistica bolt) {
++		Char ch = Actor.findChar(bolt.collisionPos);
++		if (ch != null) {
++			ModEffects.hit(ModData.wandKind(modId), ModData.wandPower(modId), curUser, ch, buffedLvl());
++			wandProc(ch, chargesPerCast());
++		} else {
++			Dungeon.level.pressCell(bolt.collisionPos);
++		}
++	}
++
++	@Override
++	public void fx(Ballistica bolt, Callback callback) {
++		MagicMissile.boltFromChar(curUser.sprite.parent, ModData.wandMissile(modId), curUser.sprite, bolt.collisionPos, callback);
++		Sample.INSTANCE.play(Assets.Sounds.ZAP);
++	}
++
++	@Override
++	public void onHit(MagesStaff staff, Char attacker, Char defender, int damage) {
++		//not usable as a mage's staff imbue
++	}
++
++	@Override
++	public String name() {
++		return ModData.wandName(modId);
++	}
++
++	@Override
++	public String desc() {
++		return ModData.wandDesc(modId);
++	}
++
++	@Override
++	public String statsDesc() {
++		return "Spawned by the Mod Menu. Upgrading increases effect strength and charges.";
++	}
++
++	@Override
++	public void storeInBundle(Bundle bundle) {
++		super.storeInBundle(bundle);
++		bundle.put(MOD_ID, modId);
++	}
++
++	@Override
++	public void restoreFromBundle(Bundle bundle) {
++		setMod(bundle.getInt(MOD_ID));
++		super.restoreFromBundle(bundle);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModWeapon.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModWeapon.java
+new file mode 100644
+index 00000000..4de4cbf6
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/ModWeapon.java
+@@ -0,0 +1,72 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Assets;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MeleeWeapon;
++import com.watabou.utils.Bundle;
++
++/** A table-driven melee weapon: base weapon type x modifier, see ModData. */
++public class ModWeapon extends MeleeWeapon {
++
++	private static final String MOD_ID = "mod_id";
++	public int modId = 0;
++
++	public ModWeapon() {
++		this(0);
++	}
++
++	public ModWeapon(int id) {
++		applyStats(id);
++		if (ModData.weaponEnchant(id) != null) {
++			enchant(ModData.weaponEnchant(id));
++		}
++	}
++
++	private void applyStats(int id) {
++		modId = id;
++		image = ModData.weaponSprite(id);
++		tier = ModData.weaponTier(id);
++		ACC = ModData.weaponAcc(id);
++		DLY = ModData.weaponDly(id);
++		RCH = ModData.weaponReach(id);
++		hitSound = Assets.Sounds.HIT_SLASH;
++		hitSoundPitch = 1f;
++	}
++
++	@Override
++	public int min(int lvl) {
++		return Math.max(1, Math.round(super.min(lvl) * ModData.weaponDmg(modId)));
++	}
++
++	@Override
++	public int max(int lvl) {
++		return Math.max(2, Math.round(super.max(lvl) * ModData.weaponDmg(modId)));
++	}
++
++	@Override
++	public String name() {
++		return ModData.weaponName(modId);
++	}
++
++	@Override
++	public String desc() {
++		return ModData.weaponDesc(modId);
++	}
++
++	@Override
++	public String info() {
++		return desc() + "\n\nTier " + tier + " weapon. Damage " + min() + "-" + max()
++				+ ", accuracy x" + ACC + ", attack delay x" + DLY + ", reach " + RCH + ".\n\nSpawned by the Mod Menu.";
++	}
++
++	@Override
++	public void storeInBundle(Bundle bundle) {
++		super.storeInBundle(bundle);
++		bundle.put(MOD_ID, modId);
++	}
++
++	@Override
++	public void restoreFromBundle(Bundle bundle) {
++		applyStats(bundle.getInt(MOD_ID));
++		super.restoreFromBundle(bundle);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/NecromancerGrimoire.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/NecromancerGrimoire.java
+new file mode 100644
+index 00000000..4ec8f261
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/NecromancerGrimoire.java
+@@ -0,0 +1,354 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Assets;
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Actor;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Barrier;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Haste;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Slow;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
++import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mimic;
++import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
++import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.npcs.NPC;
++import com.shatteredpixel.shatteredpixeldungeon.effects.CellEmitter;
++import com.shatteredpixel.shatteredpixeldungeon.effects.Speck;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.potions.PotionOfHealing;
++import com.shatteredpixel.shatteredpixeldungeon.items.wands.Wand;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.CellSelector;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSpriteSheet;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.noosa.audio.Sample;
++import com.watabou.utils.Bundle;
++import com.watabou.utils.Random;
++import com.watabou.utils.Reflection;
++
++import java.util.ArrayList;
++import java.util.Collections;
++
++/**
++ * The necromancer's spellbook. No cooldowns and no limits.
++ * Raise Dead turns any living enemy you tap into a permanent undead servant.
++ * Every enemy you kill also leaves a soul, which Summon Souls turns into more undead.
++ */
++public class NecromancerGrimoire extends Item {
++
++	private static final String AC_RAISE  = "RAISE DEAD";
++	private static final String AC_SOULS  = "SUMMON SOULS";
++	private static final String AC_ARMOR  = "BONE ARMOR";
++	private static final String AC_DRAIN  = "SOUL DRAIN";
++	private static final String AC_NOVA   = "DEATH NOVA";
++
++	private static final String SOULS = "souls";
++
++	private ArrayList<String> souls = new ArrayList<>();   // class names, newest last
++
++	{
++		image = ItemSpriteSheet.ARTIFACT_TOME;
++		defaultAction = AC_RAISE;
++		unique = true;
++		identify();
++	}
++
++	// ------------------------------------------------------------------ helpers
++
++	/** Called from Mob.die for every death. */
++	public static void onMobKilled(Mob mob, Object cause) {
++		Hero hero = Dungeon.hero;
++		if (hero == null || !hero.isAlive()) return;
++
++		//one of our undead died
++		if (mob.alignment == Char.Alignment.ALLY && mob.buff(RaisedUndead.class) != null) {
++			heal(hero, Math.round(hero.HT * 0.06f * hero.pointsInTalent(Talent.DEATH_BOND)));
++			return;
++		}
++
++		if (mob.alignment != Char.Alignment.ENEMY) return;
++		if (!(cause == hero || cause instanceof Weapon || cause instanceof Weapon.Enchantment || cause instanceof Wand)) return;
++		NecromancerGrimoire book = find(hero);
++		if (book == null || !canRaise(mob)) return;
++
++		book.souls.add(mob.getClass().getName());
++		if (Random.Float() < 0.25f * hero.pointsInTalent(Talent.DOUBLE_SOUL)) {
++			book.souls.add(mob.getClass().getName());
++		}
++		heal(hero, Math.round(hero.HT * 0.03f * hero.pointsInTalent(Talent.SOUL_TITHE)));
++		int vault = hero.pointsInTalent(Talent.SOUL_VAULT);
++		if (vault > 0) Buff.affect(hero, Barrier.class).incShield(3 * vault);
++		GLog.i("Soul claimed: " + mob.name() + " (" + book.souls.size() + " stored)");
++		Item.updateQuickslot();
++	}
++
++	private static void heal(Hero hero, int amount) {
++		if (amount <= 0) return;
++		hero.HP = Math.min(hero.HT, hero.HP + amount);
++		hero.sprite.emitter().burst(Speck.factory(Speck.HEALING), 2);
++	}
++
++	public static NecromancerGrimoire find(Hero hero) {
++		for (Item i : hero.belongings) {
++			if (i instanceof NecromancerGrimoire) return (NecromancerGrimoire) i;
++		}
++		return null;
++	}
++
++	/** Bosses would soft-lock their floor, so they (and statues, NPCs, mimics) can't be raised. */
++	private static boolean canRaise(Mob mob) {
++		return !(mob.properties().contains(Char.Property.BOSS) || mob.properties().contains(Char.Property.IMMOVABLE)
++				|| mob instanceof NPC || mob instanceof Mimic);
++	}
++
++	private static ArrayList<Mob> livingUndead() {
++		ArrayList<Mob> list = new ArrayList<>();
++		for (Mob m : Dungeon.level.mobs.toArray(new Mob[0])) {
++			if (m.isAlive() && m.alignment == Char.Alignment.ALLY && m.buff(RaisedUndead.class) != null) list.add(m);
++		}
++		return list;
++	}
++
++	private static ArrayList<Mob> visibleEnemies() {
++		ArrayList<Mob> list = new ArrayList<>();
++		for (Mob m : Dungeon.level.mobs.toArray(new Mob[0])) {
++			if (m.isAlive() && m.alignment == Char.Alignment.ENEMY && Dungeon.level.heroFOV[m.pos]) list.add(m);
++		}
++		return list;
++	}
++
++	private static void spendTurn(Hero hero) {
++		Sample.INSTANCE.play(Assets.Sounds.READ);
++		hero.spend(1f);
++		hero.busy();
++		hero.sprite.operate(hero.pos);
++	}
++
++	/** Turns a living enemy into a permanent undead servant at full health. */
++	private static void convert(Mob mob, Hero hero, boolean summoned) {
++		mob.alignment = Char.Alignment.ALLY;
++		mob.clearEnemy();
++		mob.state = mob.WANDERING;
++		mob.EXP = 0;
++
++		float hpBonus = 0.25f * hero.pointsInTalent(Talent.FRESH_GRAVES);
++		if (summoned) hpBonus += 0.25f * hero.pointsInTalent(Talent.LEGION_VIGOR);
++		if (hpBonus > 0) mob.HT = Math.round(mob.HT * (1f + hpBonus));
++		mob.HP = mob.HT;
++		PotionOfHealing.cure(mob);
++		Buff.affect(mob, RaisedUndead.class);
++
++		float haste = 20f * hero.pointsInTalent(Talent.SPECTRAL_SPEED);
++		if (summoned) haste += 15f * hero.pointsInTalent(Talent.RISEN_RAGE);
++		if (haste > 0) Buff.prolong(mob, Haste.class, haste);
++
++		int overlord = hero.pointsInTalent(Talent.OVERLORD);
++		if (overlord > 0) Buff.affect(mob, Barrier.class).setShield(overlord * (2 + hero.lvl));
++
++		CellEmitter.get(mob.pos).burst(Speck.factory(Speck.BONE), 8);
++	}
++
++	// ------------------------------------------------------------------ actions
++
++	@Override
++	public ArrayList<String> actions(Hero hero) {
++		ArrayList<String> actions = super.actions(hero);
++		Collections.addAll(actions, AC_RAISE, AC_SOULS, AC_ARMOR, AC_DRAIN, AC_NOVA);
++		return actions;
++	}
++
++	@Override
++	public void execute(final Hero hero, String action) {
++		super.execute(hero, action);
++		if (action.equals(AC_RAISE)) {
++			curUser = hero;
++			GameScene.selectCell(new CellSelector.Listener() {
++				@Override
++				public void onSelect(Integer cell) {
++					if (cell != null) raiseTarget(hero, cell);
++				}
++				@Override
++				public String prompt() {
++					return "Choose an enemy to raise as your undead servant";
++				}
++			});
++		} else if (action.equals(AC_SOULS)) {
++			if (summonSouls(hero)) spendTurn(hero);
++		} else if (action.equals(AC_ARMOR)) {
++			if (boneArmor(hero)) spendTurn(hero);
++		} else if (action.equals(AC_DRAIN)) {
++			if (soulDrain(hero)) spendTurn(hero);
++		} else if (action.equals(AC_NOVA)) {
++			if (deathNova(hero)) spendTurn(hero);
++		}
++	}
++
++	private void raiseTarget(Hero hero, int cell) {
++		Char ch = Actor.findChar(cell);
++		if (!(ch instanceof Mob) || !ch.isAlive() || !Dungeon.level.heroFOV[cell]) {
++			GLog.w("There is no enemy there.");
++			return;
++		}
++		Mob mob = (Mob) ch;
++		if (mob.alignment == Char.Alignment.ALLY) {
++			GLog.w(mob.name() + " already serves you.");
++			return;
++		}
++		if (!canRaise(mob)) {
++			GLog.w(mob.name() + " resists your magic.");
++			return;
++		}
++		convert(mob, hero, false);
++		GLog.p(mob.name() + " rises as your undead servant!");
++		spendTurn(hero);
++	}
++
++	/** Summon Souls: raise every stored soul at once. */
++	public static boolean summonSouls(Hero hero) {
++		NecromancerGrimoire book = find(hero);
++		if (book == null) {
++			GLog.w("You need the Necromancer's Grimoire for this.");
++			return false;
++		}
++		if (book.souls.isEmpty()) {
++			GLog.w("The grimoire holds no souls. Slay enemies to claim them.");
++			return false;
++		}
++		ArrayList<Integer> spots = new ArrayList<>();
++		for (int c = 0; c < Dungeon.level.length(); c++) {
++			if (Dungeon.level.passable[c] && !Dungeon.level.solid[c] && Actor.findChar(c) == null
++					&& c != hero.pos && Dungeon.level.distance(hero.pos, c) <= 4 && Dungeon.level.heroFOV[c]) {
++				spots.add(c);
++			}
++		}
++		Random.shuffle(spots);
++
++		int raised = 0;
++		while (!book.souls.isEmpty() && !spots.isEmpty()) {
++			String name = book.souls.remove(book.souls.size() - 1);
++			Class<?> cls = Reflection.forName(name);
++			Mob mob = cls == null ? null : (Mob) Reflection.newInstance(cls);
++			if (mob == null) continue;
++			mob.pos = spots.remove(spots.size() - 1);
++			GameScene.add(mob);
++			convert(mob, hero, true);
++			raised++;
++		}
++		if (raised == 0) {
++			GLog.w("There is no room to raise the dead.");
++			return false;
++		}
++		GLog.p("You raise " + raised + " undead!");
++		Item.updateQuickslot();
++		return true;
++	}
++
++	/** Bone Armor: a barrier for you, and a smaller one for each undead servant. */
++	public static boolean boneArmor(Hero hero) {
++		ArrayList<Mob> undead = livingUndead();
++		float power = 1f + 0.3f * hero.pointsInTalent(Talent.BONE_PLATING) + 0.25f * hero.pointsInTalent(Talent.THICK_MARROW);
++		int shield = Math.round((8 + hero.lvl * 2 + 6 * undead.size()) * power);
++		float share = 0.5f + 0.125f * hero.pointsInTalent(Talent.SHARED_ARMOR);
++		Buff.affect(hero, Barrier.class).setShield(shield);
++		for (Mob m : undead) Buff.affect(m, Barrier.class).setShield(Math.round(shield * share));
++		CellEmitter.get(hero.pos).burst(Speck.factory(Speck.BONE), 8);
++		GLog.p("Bones knit into armor around you (" + shield + " shield).");
++		return true;
++	}
++
++	/** Soul Drain: damage every visible enemy, heal you and your undead. */
++	public static boolean soulDrain(Hero hero) {
++		ArrayList<Mob> enemies = visibleEnemies();
++		if (enemies.isEmpty()) {
++			GLog.w("No enemies in sight to drain.");
++			return false;
++		}
++		int total = 0;
++		for (Mob m : enemies) {
++			int dmg = Random.NormalIntRange(3 + hero.lvl, 8 + hero.lvl * 2);
++			total += Math.min(dmg, m.HP);
++			m.damage(dmg, hero);
++			CellEmitter.get(m.pos).burst(Speck.factory(Speck.SCREAM), 3);
++		}
++		int heal = Math.round(total * 0.6f * (1f + 0.25f * hero.pointsInTalent(Talent.VAMPIRIC_TOUCH)));
++		hero.HP = Math.min(hero.HT, hero.HP + heal);
++		hero.sprite.emitter().burst(Speck.factory(Speck.HEALING), 4);
++		for (Mob u : livingUndead()) u.HP = Math.min(u.HT, u.HP + heal / 2);
++		GLog.p("You drain the life of your enemies and recover " + heal + " HP.");
++		return true;
++	}
++
++	/** Death Nova: every undead servant releases a pulse hurting and slowing enemies within 3 tiles. */
++	public static boolean deathNova(Hero hero) {
++		ArrayList<Mob> undead = livingUndead();
++		if (undead.isEmpty()) {
++			GLog.w("You need an undead servant to release a nova.");
++			return false;
++		}
++		int radius = 3 + hero.pointsInTalent(Talent.PULSE_REACH);
++		float slow = 4f + 4f * hero.pointsInTalent(Talent.GRAVE_FROST);
++		int feast = hero.pointsInTalent(Talent.CORPSE_FEAST);
++		for (Mob u : undead) {
++			for (Mob m : Dungeon.level.mobs.toArray(new Mob[0])) {
++				if (m.isAlive() && m.alignment == Char.Alignment.ENEMY && Dungeon.level.distance(u.pos, m.pos) <= radius) {
++					m.damage(Random.NormalIntRange(6 + hero.lvl * 2, 14 + hero.lvl * 3), hero);
++					if (m.isAlive()) Buff.prolong(m, Slow.class, slow);
++					heal(hero, Math.round(hero.HT * 0.02f * feast));
++				}
++			}
++			CellEmitter.get(u.pos).burst(Speck.factory(Speck.BONE), 10);
++			CellEmitter.get(u.pos).burst(Speck.factory(Speck.DUST), 8);
++		}
++		Sample.INSTANCE.play(Assets.Sounds.BLAST);
++		GLog.p("Your undead servants release a deathly pulse!");
++		return true;
++	}
++
++	// ------------------------------------------------------------------ item boilerplate
++
++	@Override
++	public boolean isUpgradable() {
++		return false;
++	}
++
++	@Override
++	public boolean isIdentified() {
++		return true;
++	}
++
++	@Override
++	public String name() {
++		return "Necromancer's Grimoire";
++	}
++
++	@Override
++	public String desc() {
++		return "A book bound in pale skin. No cooldowns, no limits (" + souls.size() + " souls stored)."
++				+ "\n\n_Raise Dead_: tap any living enemy in sight to turn it into a permanent undead servant at full health. Bosses resist."
++				+ "\n_Summon Souls_: every enemy you slay leaves a soul. This raises all of them at once."
++				+ "\n_Bone Armor_: a barrier for you and a smaller one for your undead."
++				+ "\n_Soul Drain_: damage every enemy in sight and heal you and your undead."
++				+ "\n_Death Nova_: every undead servant releases a pulse that hurts and slows nearby enemies."
++				+ "\n\nYour undead never expire, and wherever they walk the map is revealed to you.";
++	}
++
++	@Override
++	public int value() {
++		return 0;
++	}
++
++	@Override
++	public void storeInBundle(Bundle bundle) {
++		super.storeInBundle(bundle);
++		bundle.put(SOULS, souls.toArray(new String[0]));
++	}
++
++	@Override
++	public void restoreFromBundle(Bundle bundle) {
++		super.restoreFromBundle(bundle);
++		souls = new ArrayList<>();
++		if (bundle.contains(SOULS)) Collections.addAll(souls, bundle.getStringArray(SOULS));
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/RaisedUndead.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/RaisedUndead.java
+new file mode 100644
+index 00000000..0804fdc8
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/mod/RaisedUndead.java
+@@ -0,0 +1,100 @@
++package com.shatteredpixel.shatteredpixeldungeon.items.mod;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.Char;
++import com.shatteredpixel.shatteredpixeldungeon.actors.buffs.Buff;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Talent;
++import com.shatteredpixel.shatteredpixeldungeon.levels.Level;
++import com.shatteredpixel.shatteredpixeldungeon.levels.Terrain;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite;
++import com.shatteredpixel.shatteredpixeldungeon.ui.BuffIndicator;
++
++/**
++ * Marks a mob as one of the necromancer's undead. Permanent: it never expires.
++ * Wherever the undead walks, the map around it is revealed for you.
++ */
++public class RaisedUndead extends Buff {
++
++	private static final int RADIUS = 6;
++	private int mendCounter = 0;
++
++	{
++		type = buffType.POSITIVE;
++	}
++
++	@Override
++	public boolean act() {
++		if (target != null && target.isAlive() && Dungeon.level != null
++				&& target.alignment == Char.Alignment.ALLY) {
++			reveal();
++			talentEffects();
++		}
++		spend(TICK);
++		return true;
++	}
++
++	private void talentEffects() {
++		Hero hero = Dungeon.hero;
++		if (hero == null || !hero.isAlive()) return;
++
++		int restless = hero.pointsInTalent(Talent.RESTLESS_DEAD);
++		if (restless > 0 && target.HP < target.HT) {
++			target.HP = Math.min(target.HT, target.HP + Math.max(1, Math.round(target.HT * 0.01f * restless)));
++		}
++
++		int mend = hero.pointsInTalent(Talent.DARK_MEND);
++		if (mend > 0 && hero.HP < hero.HT && Dungeon.level.distance(hero.pos, target.pos) <= 3) {
++			mendCounter++;
++			if (mendCounter >= (mend == 1 ? 6 : 3)) {
++				mendCounter = 0;
++				hero.HP++;
++			}
++		}
++	}
++
++	private void reveal() {
++		Level level = Dungeon.level;
++		int w = level.width();
++		int h = level.height();
++		int cx = target.pos % w;
++		int cy = target.pos / w;
++		boolean changed = false;
++		for (int y = Math.max(0, cy - RADIUS); y <= Math.min(h - 1, cy + RADIUS); y++) {
++			for (int x = Math.max(0, cx - RADIUS); x <= Math.min(w - 1, cx + RADIUS); x++) {
++				int c = x + y * w;
++				if (level.discoverable[c] && !level.mapped[c]) {
++					level.mapped[c] = true;
++					if ((Terrain.flags[level.map[c]] & Terrain.SECRET) != 0) level.discover(c);
++					changed = true;
++				}
++			}
++		}
++		if (changed) {
++			GameScene.updateMap();
++			Dungeon.observe();
++		}
++	}
++
++	@Override
++	public void fx(boolean on) {
++		if (on) target.sprite.add(CharSprite.State.DARKENED);
++		else if (target.invisible == 0) target.sprite.remove(CharSprite.State.DARKENED);
++	}
++
++	@Override
++	public int icon() {
++		return BuffIndicator.CORRUPT;
++	}
++
++	@Override
++	public String toString() {
++		return "Undead servant";
++	}
++
++	@Override
++	public String desc() {
++		return "This creature serves a necromancer and will never crumble away. Everywhere it walks, the map is revealed to you.";
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
+index 012909f0..12f4b348 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
+@@ -61,6 +61,16 @@ public class WndGame extends Window {
+ 		});
+ 		curBtn.icon(Icons.get(Icons.PREFS));
+ 
++		// Mod menu
++		addButton( curBtn = new RedButton( "Mod Menu" ) {
++			@Override
++			protected void onClick() {
++				hide();
++				GameScene.show(new WndModMenu());
++			}
++		});
++		curBtn.icon(Icons.get(Icons.CHALLENGE_COLOR));
++
+ 		// Challenges window
+ 		if (Dungeon.challenges > 0) {
+ 			addButton( curBtn = new RedButton( Messages.get(this, "challenges") ) {
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModMenu.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModMenu.java
+new file mode 100644
+index 00000000..46efe62f
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModMenu.java
+@@ -0,0 +1,114 @@
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.ModMenu;
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.ModData;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.ui.CheckBox;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.ScrollPane;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++import com.watabou.noosa.ui.Component;
++
++public class WndModMenu extends Window {
++
++	private static final int WIDTH = 120;
++	private static final int BTN_HEIGHT = 16;
++	private static final int HALF = 59;
++	private static final int GAP = 2;
++
++	private final Component content;
++	private float pos = 0;
++
++	public WndModMenu() {
++		super();
++
++		int maxHeight = (int) (PixelScene.uiCamera.height * 0.85f);
++		ScrollPane pane = new ScrollPane(new Component());
++		add(pane);
++		content = pane.content();
++
++		addFull(new CheckBox("Auto-respawn on death") {
++			{ checked(ModMenu.respawn()); }
++			@Override protected void onClick() { super.onClick(); ModMenu.respawn(checked()); }
++		});
++		addFull(new CheckBox("Freeze hunger") {
++			{ checked(ModMenu.noHunger()); }
++			@Override protected void onClick() { super.onClick(); ModMenu.noHunger(checked()); }
++		});
++		addFull(new CheckBox("God mode (no damage)") {
++			{ checked(ModMenu.godMode()); }
++			@Override protected void onClick() { super.onClick(); ModMenu.godMode(checked()); }
++		});
++
++		addFull(new RedButton("Damage multiplier: x" + ModMenu.damageMult(), 8) {
++			@Override protected void onClick() { text("Damage multiplier: x" + ModMenu.cycleDamageMult()); }
++		});
++
++		addPair(
++				new RedButton("Heal to full", 8) {
++					@Override protected void onClick() { ModMenu.fullHeal(Dungeon.hero); hide(); }
++				},
++				new RedButton("Fill hunger", 8) {
++					@Override protected void onClick() { ModMenu.fillHunger(Dungeon.hero); hide(); }
++				});
++		addPair(
++				new RedButton("+10,000 gold", 8) {
++					@Override protected void onClick() { ModMenu.addGold(10000); }
++				},
++				new RedButton("+50 max HP", 8) {
++					@Override protected void onClick() { ModMenu.addMaxHP(Dungeon.hero, 50); }
++				});
++		addPair(
++				new RedButton("Reveal map", 8) {
++					@Override protected void onClick() { ModMenu.revealMap(); hide(); }
++				},
++				new RedButton("Identify all", 8) {
++					@Override protected void onClick() { ModMenu.identifyAll(); hide(); }
++				});
++		addPair(
++				new RedButton("Floor +1", 8) {
++					@Override protected void onClick() { hide(); ModMenu.changeFloor(1); }
++				},
++				new RedButton("Floor -1", 8) {
++					@Override protected void onClick() { hide(); ModMenu.changeFloor(-1); }
++				});
++
++		addPair(spawnButton(ModData.WEAPONS), spawnButton(ModData.WANDS));
++		addPair(spawnButton(ModData.SCROLLS), spawnButton(ModData.SPELLS));
++		addFull(spawnButton(ModData.CURSES));
++		addFull(new RedButton("Get Necromancer's Grimoire", 8) {
++			@Override protected void onClick() { ModMenu.giveGrimoire(Dungeon.hero); hide(); }
++		});
++
++		content.setSize(WIDTH, pos);
++		int height = (int) Math.min(pos, maxHeight);
++		resize(WIDTH, height);
++		pane.setRect(0, 0, WIDTH, height);
++	}
++
++	private RedButton spawnButton(final int category) {
++		return new RedButton(ModData.CATEGORY_NAMES[category] + " (" + ModData.count(category) + ")", 8) {
++			@Override
++			protected void onClick() {
++				hide();
++				GameScene.show(new WndModSpawn(category));
++			}
++		};
++	}
++
++	private void addFull(Component c) {
++		content.add(c);
++		c.setRect(0, pos, WIDTH, BTN_HEIGHT);
++		pos += BTN_HEIGHT + GAP;
++	}
++
++	private void addPair(Component a, Component b) {
++		content.add(a);
++		content.add(b);
++		a.setRect(0, pos, HALF, BTN_HEIGHT);
++		b.setRect(HALF + GAP, pos, HALF, BTN_HEIGHT);
++		pos += BTN_HEIGHT + GAP;
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModSpawn.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModSpawn.java
+new file mode 100644
+index 00000000..d858e335
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndModSpawn.java
+@@ -0,0 +1,60 @@
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.items.mod.ModData;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
++import com.shatteredpixel.shatteredpixeldungeon.ui.ScrollPane;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++import com.watabou.noosa.ui.Component;
++
++/** Scrollable list of every mod item in one category. Tap an entry to get it. */
++public class WndModSpawn extends Window {
++
++	private static final int WIDTH = 120;
++	private static final int ROW = 14;
++	private static final int GAP = 1;
++
++	public WndModSpawn(final int category) {
++		super();
++
++		int maxHeight = (int) (PixelScene.uiCamera.height * 0.85f);
++		resize(WIDTH, maxHeight);
++
++		String hint = category == ModData.CURSES
++				? "Tap a curse to apply it to your equipped weapon."
++				: "Tap an item to add it to your pack.";
++		RenderedTextBlock title = PixelScene.renderTextBlock(ModData.CATEGORY_NAMES[category]
++				+ " (" + ModData.count(category) + ")", 9);
++		title.hardlight(TITLE_COLOR);
++		title.setPos(0, 0);
++		add(title);
++
++		RenderedTextBlock sub = PixelScene.renderTextBlock(hint, 6);
++		sub.maxWidth(WIDTH);
++		sub.setPos(0, title.bottom() + 1);
++		add(sub);
++
++		float top = sub.bottom() + 3;
++		ScrollPane pane = new ScrollPane(new Component());
++		add(pane);
++		pane.setRect(0, top, WIDTH, maxHeight - top);
++		Component content = pane.content();
++
++		float pos = 0;
++		int n = ModData.count(category);
++		for (int i = 0; i < n; i++) {
++			final int id = i;
++			RedButton btn = new RedButton(ModData.name(category, i), 7) {
++				@Override
++				protected void onClick() {
++					ModData.give(category, id);
++				}
++			};
++			content.add(btn);
++			btn.setRect(0, pos, WIDTH, ROW);
++			pos += ROW + GAP;
++		}
++		content.setSize(WIDTH, pos);
++	}
++}
